@@ -2,9 +2,9 @@
 Databases Week 2 Tutorial
 week2_student.sql
 
-student id:
-student name:
-last modified date:
+student id: 30769140
+student name: Sadeeptha Bandara
+last modified date: 5/8/2021
 
 */
 
