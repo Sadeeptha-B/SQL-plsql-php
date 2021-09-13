@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FD611A0D-0792-7F16-EC36-277BB80DD1D7" name="ORDERS">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="933DEFF0-53C2-4614-8DC0-5ACC8670507C" name="PRODUCT">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-13 10:10:47 UTC</createdTime>
+<createdTime>2021-09-13 10:20:30 UTC</createdTime>
 <ownerDesignName>CustOrders</ownerDesignName>
 <engineerTo>
 <item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
@@ -15,10 +15,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="order_no" id="91DBCDD1-E339-432D-1EAC-FEA88CD771DD">
+<Attribute name="prod_no" id="2A8BD451-0654-9885-47E4-90D40A765203">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-13 10:11:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[order number]]></commentInRDBMS>
+<createdTime>2021-09-13 10:20:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[product number]]></commentInRDBMS>
 <ownerDesignName>CustOrders</ownerDesignName>
 <engineerTo>
 <item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
@@ -29,47 +29,63 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="order_date" id="A07126ED-FCB0-830E-80BE-6C382F17FAB8">
+<Attribute name="prod_desc" id="20A598BA-A064-9BAB-E28B-82D25F7257ED">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-13 10:11:31 UTC</createdTime>
-<commentInRDBMS><![CDATA[order date]]></commentInRDBMS>
+<createdTime>2021-09-13 10:21:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[product description]]></commentInRDBMS>
 <ownerDesignName>CustOrders</ownerDesignName>
 <engineerTo>
 <item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cust_no" id="DF267840-1772-CC10-10CD-D1343F5AA9A3">
+<Attribute name="prod_unit_price" id="851D60C8-FDCA-68DE-BFAD-A24914261A37">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-13 10:24:15 UTC</createdTime>
-<commentInRDBMS><![CDATA[customer number]]></commentInRDBMS>
-<generatorID>7E58515B-5719-DDCC-BCCA-A50392A17D03</generatorID>
+<createdTime>2021-09-13 10:22:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[product price per unit]]></commentInRDBMS>
 <ownerDesignName>CustOrders</ownerDesignName>
 <engineerTo>
 <item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
 </engineerTo>
-<referedAttribute>AE40AA10-FD8A-5CB6-26B3-D7C3C3AC536D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pcat_id" id="AEAC374F-58E3-7722-ECAD-2549AC5C9C63">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-13 10:54:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[product category id]]></commentInRDBMS>
+<generatorID>1D25946E-EB56-8474-109D-8B76AD5CDBE8</generatorID>
+<ownerDesignName>CustOrders</ownerDesignName>
+<engineerTo>
+<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
+</engineerTo>
+<referedAttribute>CF86E164-E49F-8CEC-5E55-B754A29E4873</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="1106C61A-A090-1872-752C-6958B423286E" name="ORDER PK">
+<identifier id="449846E0-E064-587A-C889-51E50927A55E" name="PRODUCT PK">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-13 10:11:17 UTC</createdTime>
+<createdTime>2021-09-13 10:21:14 UTC</createdTime>
 <ownerDesignName>CustOrders</ownerDesignName>
 <engineerTo>
 <item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>91DBCDD1-E339-432D-1EAC-FEA88CD771DD</attributeRef>
+<attributeRef>2A8BD451-0654-9885-47E4-90D40A765203</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

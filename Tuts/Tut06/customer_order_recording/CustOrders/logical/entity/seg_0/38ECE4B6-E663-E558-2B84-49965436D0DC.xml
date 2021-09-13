@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="38ECE4B6-E663-E558-2B84-49965436D0DC" name="ORDERLINE">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-13 10:27:59 UTC</createdTime>
+<ownerDesignName>CustOrders</ownerDesignName>
+<engineerTo>
+<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="order_no" id="B9201FD7-9D36-F76F-B5A0-3F47128DAA41">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-13 10:30:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[order number]]></commentInRDBMS>
+<generatorID>70FC193A-850B-BA56-D1B6-05C056A109DA</generatorID>
+<ownerDesignName>CustOrders</ownerDesignName>
+<engineerTo>
+<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
+</engineerTo>
+<referedAttribute>91DBCDD1-E339-432D-1EAC-FEA88CD771DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_no" id="2EB52EFD-47B3-6879-CC79-C34968A02705">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-13 10:31:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[product number]]></commentInRDBMS>
+<generatorID>60CCE5A0-B1BA-4510-33F1-E63D006DD612</generatorID>
+<ownerDesignName>CustOrders</ownerDesignName>
+<engineerTo>
+<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
+</engineerTo>
+<referedAttribute>2A8BD451-0654-9885-47E4-90D40A765203</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ol_qtyordered" id="BB899FDA-45C4-D531-B79B-046F3C515942">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-13 10:28:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[quantity ordered for each product in an order]]></commentInRDBMS>
+<ownerDesignName>CustOrders</ownerDesignName>
+<engineerTo>
+<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ol_lineprice" id="CCDD86D5-0B29-1535-1D5E-948DC0F9DA85">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-13 10:29:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[total price for each product in an order]]></commentInRDBMS>
+<ownerDesignName>CustOrders</ownerDesignName>
+<engineerTo>
+<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,9,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="09BF9A39-435D-720A-89F9-175BFCF684AF" name="ORDERLINE PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-13 10:30:31 UTC</createdTime>
+<ownerDesignName>CustOrders</ownerDesignName>
+<engineerTo>
+<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B9201FD7-9D36-F76F-B5A0-3F47128DAA41</attributeRef>
+<attributeRef>2EB52EFD-47B3-6879-CC79-C34968A02705</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

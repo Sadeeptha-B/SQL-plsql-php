@@ -72,6 +72,26 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cust_level" id="FB4D0BDF-F81B-7FD4-FF3D-95286EA7E4F6">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-13 10:43:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer level(either Gold, Silver, Bronze)]]></commentInRDBMS>
+<ownerDesignName>CustOrders</ownerDesignName>
+<engineerTo>
+<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
+</engineerTo>
+<constraintName>chk_custlevel</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bronze"/>
+<valueDef value="G" description="Gold"/>
+<valueDef value="S" description="Silver"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2CD560C6-1CCA-4E31-0771-29B4D7B3992A" name="CUSTOMER PK">
