@@ -58,12 +58,25 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="16DCECEA-61ED-B3F4-C2DD-EEBCBF5F0AE6" referredColumn="393C0A45-7A03-2451-C14D-19D8FAA3F262"/>
 </associations>
+</Column>
+<Column name="prodnstock" id="8F98A066-7265-1F52-94AA-04FAC42C0396">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-13 17:24:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Number of product in stock]]></commentInRDBMS>
+<generatorID>1B4E909A-B920-9688-49C4-5C536EF30C15</generatorID>
+<ownerDesignName>CustOrders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

@@ -45,7 +45,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="ol_qtyordered" id="BB899FDA-45C4-D531-B79B-046F3C515942">
 <createdBy>Sadeeptha</createdBy>
@@ -82,8 +82,9 @@
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-13 10:30:31 UTC</createdTime>
 <ownerDesignName>CustOrders</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="true"/>
+<item key="D31A602A-F8AF-17B3-70EE-54CCDA8A1577" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
