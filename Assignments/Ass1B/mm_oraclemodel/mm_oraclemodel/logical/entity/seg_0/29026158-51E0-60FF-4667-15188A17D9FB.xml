@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="29026158-51E0-60FF-4667-15188A17D9FB" name="CENTRE">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:21:23 UTC</createdTime>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="centre_id" id="716D832C-1DE8-4AF8-8EF9-E161F959293A">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:21:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_name" id="728A46D4-C73E-7B19-3DD5-3060742EA44C">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:22:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre name]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_street" id="8DCBE258-0B02-9F6A-F734-2DD3A8F683DE">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:22:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre's street]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_town" id="849C3146-9CD9-B4C1-FDCC-2275E4EEDBF8">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:45:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre's town]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_postcode" id="47229206-D907-C1F0-3596-0EB4074EA354">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:45:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre's postcode]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_phone" id="CAE4C20E-9A83-2059-380F-B22D7241B958">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:23:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre's phone number]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E7E69F71-5DBB-B24E-3263-4B6F4512ACF3" name="CENTRE PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:22:19 UTC</createdTime>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>716D832C-1DE8-4AF8-8EF9-E161F959293A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="8C6ED41F-E75F-7D77-65E6-70882A261191">
+<createdBy>Sadeeptha</createdBy>
+<modifiedBy>Sadeeptha</modifiedBy>
+<createdTime>2021-09-16 13:21:23 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>true</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>2</notation>
+<showAllDetails>false</showAllDetails>
+<showElements>true</showElements>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2808EA92-A748-CB97-089D-3ED37A79782A" otype="Entity" vid="F0B0D53D-2B8D-55A3-A198-9C6BF457F1C7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="657" y="195" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="29026158-51E0-60FF-4667-15188A17D9FB" otype="Entity" vid="71D71E67-8B6A-9B9D-E291-3D6BC2FF0D47">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="361" y="193" width="155" height="126"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="66EE840B-C987-A04E-EEE2-4EAE77FDFF9E" otype="Entity" vid="205FA8EC-627A-BDC4-E843-78DCBA8A073B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="350" y="431" width="171" height="154"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="BEA98C8F-F5A9-FB5A-4C63-6B9DD9297D0E" otype="Entity" vid="A81E10BF-6E2D-098C-E483-590BE4F0DCC2">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="81" y="439" width="170" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="BF337949-0116-F974-B51E-716233289EC9" otype="Entity" vid="AE58B49E-A4B3-6DD8-411D-6AB125EDD76B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="95" y="193" width="170" height="110"/>
+</OView>
+</objectViews>
+</Diagram>

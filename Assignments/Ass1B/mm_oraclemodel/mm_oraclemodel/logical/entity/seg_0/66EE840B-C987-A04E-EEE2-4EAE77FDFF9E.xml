@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="66EE840B-C987-A04E-EEE2-4EAE77FDFF9E" name="MEMBER">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:33:54 UTC</createdTime>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_no" id="ACFA7DB8-3799-AAA2-DC8C-20438FE25D88">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:34:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_fname" id="995985F0-782F-D31E-9100-EF44B618A9D7">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:35:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member family  name]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_gname" id="9BA44A2B-16DC-F59F-9319-859C87C4C568">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:34:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member given name]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_street" id="3BB69E7E-0B9B-03EF-26DF-851B268271A8">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:34:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member's street]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_town" id="7D089A0C-16C6-C405-D6CB-DA11E0BF9B8D">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:39:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member's town]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_postcode" id="BBF0337F-BE72-F737-1390-CBB12EFFB87E">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:42:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member's postcode]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_phone_no" id="C30E987F-879C-F9D8-9272-B3EDC322C651">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:42:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member's phone number]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_join_date" id="2D5D73A2-9207-C206-B1F8-98CAF87ADAFF">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:43:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date the member joined]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="847B8DF5-DB96-75CB-3F06-DB563890BE3C" name="MEMBER PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 13:34:22 UTC</createdTime>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ACFA7DB8-3799-AAA2-DC8C-20438FE25D88</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
