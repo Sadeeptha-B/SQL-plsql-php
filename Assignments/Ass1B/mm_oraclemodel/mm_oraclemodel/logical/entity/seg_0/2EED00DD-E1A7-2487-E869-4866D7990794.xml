@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="enrollment_no" id="40913225-E186-8FE1-C982-684FF2B47B0D">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:05:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Enrollment Number]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="centre_id" id="1BEA5A78-B761-F557-3BDE-D134C043F5B4">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 17:21:35 UTC</createdTime>
@@ -101,9 +115,21 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2</attributeRef>
-<attributeRef>FA6588D3-71F0-3965-5D1D-43596DABCE4D</attributeRef>
+<attributeRef>40913225-E186-8FE1-C982-684FF2B47B0D</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B63AD168-6DAB-654F-FC68-2BD3BF5F24DB" name="ENROLLMENT_NK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:11:36 UTC</createdTime>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<newElementsIDs>1BEA5A78-B761-F557-3BDE-D134C043F5B4,FA6588D3-71F0-3965-5D1D-43596DABCE4D,B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2</newElementsIDs>
+<usedAttributes>
 <attributeRef>1BEA5A78-B761-F557-3BDE-D134C043F5B4</attributeRef>
+<attributeRef>FA6588D3-71F0-3965-5D1D-43596DABCE4D</attributeRef>
+<attributeRef>B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

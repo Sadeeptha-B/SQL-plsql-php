@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="class_staff_no" id="4654B530-EDF2-7EBF-E693-3947CC359CAD">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:14:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class staff member's number]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="centre_id" id="E6E8017F-77C6-AB23-442E-BC926AA9D36C">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:20:27 UTC</createdTime>
@@ -93,6 +107,18 @@
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>4654B530-EDF2-7EBF-E693-3947CC359CAD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EF40ECFB-5317-D16A-D676-3DA524DC2500" name="CLASS_STAFF_NK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:14:50 UTC</createdTime>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<newElementsIDs>E6E8017F-77C6-AB23-442E-BC926AA9D36C,12939384-6FD6-5419-0FE5-E1819662A48B,5A8B6FEC-8225-60BD-A5D1-15A463EB694D</newElementsIDs>
 <usedAttributes>
 <attributeRef>E6E8017F-77C6-AB23-442E-BC926AA9D36C</attributeRef>
 <attributeRef>12939384-6FD6-5419-0FE5-E1819662A48B</attributeRef>

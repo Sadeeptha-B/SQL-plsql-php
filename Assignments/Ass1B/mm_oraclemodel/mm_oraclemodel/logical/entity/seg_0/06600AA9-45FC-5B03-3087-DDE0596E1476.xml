@@ -15,48 +15,16 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="centre_id" id="9F28CC7C-FB73-5774-08CB-F40B856BF48F">
+<Attribute name="enrollment_no" id="0055C455-6F61-6AA2-48DE-E26CD067F990">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 18:37:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<createdTime>2021-09-16 19:06:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Enrollment Number]]></commentInRDBMS>
 <generatorID>8AAC20B5-77DE-077B-5562-1E50D214365A</generatorID>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
 </engineerTo>
-<referedAttribute>1BEA5A78-B761-F557-3BDE-D134C043F5B4</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="class_no" id="9DA601ED-8249-F18F-4F7E-C270B38DE6EB">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 18:37:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Class number: unique within a centre]]></commentInRDBMS>
-<generatorID>8AAC20B5-77DE-077B-5562-1E50D214365A</generatorID>
-<ownerDesignName>mm_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
-</engineerTo>
-<referedAttribute>FA6588D3-71F0-3965-5D1D-43596DABCE4D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="member_no" id="9DBE05D8-C59F-E4C3-81B5-07D530C6DBEF">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 18:37:00 UTC</createdTime>
-<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
-<generatorID>8AAC20B5-77DE-077B-5562-1E50D214365A</generatorID>
-<ownerDesignName>mm_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
-</engineerTo>
-<referedAttribute>B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2</referedAttribute>
+<referedAttribute>40913225-E186-8FE1-C982-684FF2B47B0D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -106,9 +74,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>9DBE05D8-C59F-E4C3-81B5-07D530C6DBEF</attributeRef>
-<attributeRef>9DA601ED-8249-F18F-4F7E-C270B38DE6EB</attributeRef>
-<attributeRef>9F28CC7C-FB73-5774-08CB-F40B856BF48F</attributeRef>
+<attributeRef>0055C455-6F61-6AA2-48DE-E26CD067F990</attributeRef>
 <attributeRef>F26A2A53-73F1-1293-A44F-8CC3B0D5EFF7</attributeRef>
 </usedAttributes>
 </identifier>
