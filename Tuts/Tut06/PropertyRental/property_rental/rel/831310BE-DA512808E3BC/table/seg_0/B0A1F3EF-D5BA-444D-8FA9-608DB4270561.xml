@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0A1F3EF-D5BA-444D-8FA9-608DB4270561" name="DAMAGE">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<generatorID>98DF7507-FC1E-E4EE-7410-963E266D86F8</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="damage_no" id="CC241B47-F840-2C6B-C844-D3FC58815210">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Damage number]]></commentInRDBMS>
+<generatorID>E18DE712-5422-BC99-1F8A-384CB1441457</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dam_datetime" id="E2A06545-42AC-14CC-A180-8D449DA5EEC5">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Damage date]]></commentInRDBMS>
+<generatorID>C139E169-A098-6876-4941-76FC2C4F5A35</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rent_agreement_no" id="F712D72F-26B2-BAF4-12C6-E213F8AED118">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Rental agreement number]]></commentInRDBMS>
+<generatorID>3A7C5AB5-F02E-0421-7FD1-39E1ACF33A3B</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2AD88EDF-732F-8C42-E986-07994ECDCCBE" referredColumn="110D2D26-4CD1-38A9-856A-3F2DCA32D7AC"/>
+</associations>
+</Column>
+<Column name="dam_type" id="AEF24EA7-DB85-4D42-CADF-31536A88B0C9">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Damage type]]></commentInRDBMS>
+<generatorID>73E2FD79-2170-8EBC-C773-1A40031C0287</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dam_cost" id="DBA7D862-D3A7-DBC5-FED0-685FBBFBB832">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Damage cost]]></commentInRDBMS>
+<generatorID>241FA7D6-05BF-9037-4617-7FF25101E606</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pay_no" id="B295E093-6FAD-3CB4-5F0D-B75B5EAFC123">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Payment number]]></commentInRDBMS>
+<generatorID>21893C69-5760-FD69-D9E0-AD2636DEADD0</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6111B5FD-A268-4518-8CC5-3F06A5F5C855" referredColumn="C578CA93-9A97-4C18-D753-A929DB1D8B1C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D752A88-2FC7-5D07-E178-818C0CCBFC5C" name="Damage_PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<generatorID>B7727CFD-1585-71F8-B7B4-BE90E43D7590</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC241B47-F840-2C6B-C844-D3FC58815210"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B89AC86-6864-4BCD-B80D-7C982ADEEEFD" name="DAMAGE_NK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<generatorID>44CF5035-7C7B-5E6B-478B-E68C88BC9298</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F712D72F-26B2-BAF4-12C6-E213F8AED118"/>
+<colUsage columnID="E2A06545-42AC-14CC-A180-8D449DA5EEC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E16FF051-A442-148B-9843-5142836DAD68" name="DAMAGE__IDX">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:05 UTC</createdTime>
+<ownerDesignName>property_rental</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CF80090B-D133-A466-912A-104EE1F0EFF8</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B295E093-6FAD-3CB4-5F0D-B75B5EAFC123"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F16A0B1D-FEBD-E1AD-B5A7-0E07BA37B368" name="damage_payment">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<generatorID>CF80090B-D133-A466-912A-104EE1F0EFF8</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B295E093-6FAD-3CB4-5F0D-B75B5EAFC123"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="409BAB0D-26F0-A2FE-205D-5F4014820191" name="rent_damage">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:05 UTC</createdTime>
+<generatorID>81C4AFA9-1516-D754-AB69-F935FB2E824B</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F712D72F-26B2-BAF4-12C6-E213F8AED118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

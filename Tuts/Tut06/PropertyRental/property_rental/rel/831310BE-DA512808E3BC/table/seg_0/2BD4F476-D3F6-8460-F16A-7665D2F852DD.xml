@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2BD4F476-D3F6-8460-F16A-7665D2F852DD" name="PROPERTY">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<generatorID>4D3A630D-BCC9-E953-8916-1529C89FDE9E</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="prop_no" id="0E9D7C6C-5B16-1FEE-59CD-22E1115E5887">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[property number]]></commentInRDBMS>
+<generatorID>05016930-DAE2-274A-E001-6977EDB13136</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_address" id="4BE3AFA3-1CC2-6BD4-D848-5716E959ABDC">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[property address			]]></commentInRDBMS>
+<generatorID>0CC237A8-FEB2-5FCE-016F-0E0EC32656C4</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_value" id="C2CB183D-DDAD-AA03-0B1B-D27E8A009C00">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property valuation	]]></commentInRDBMS>
+<generatorID>53348F33-99AE-D6AD-E949-DDB2AF122040</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_no" id="89FF1707-9A04-95D8-C7CE-B794687ECF22">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[owner id]]></commentInRDBMS>
+<generatorID>8709E194-5C67-B953-BE6A-1697B7B7F358</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E607B68-0B96-5614-1F39-C5E2B4AAE087" referredColumn="0603BA6C-98CD-00E9-E3A5-E89C1D720EE6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F042351F-3B03-8669-805D-F1E74D779B40" name="PROPERTY_PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<generatorID>0B23978B-08CC-2CB6-0726-287241534D5B</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E9D7C6C-5B16-1FEE-59CD-22E1115E5887"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16B0A727-631B-F86A-824D-5638EC3653E2" name="owner_property">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:05 UTC</createdTime>
+<generatorID>533C9A0E-1412-FC71-F502-4DBDFBDB519E</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89FF1707-9A04-95D8-C7CE-B794687ECF22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

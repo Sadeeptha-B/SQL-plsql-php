@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2AD88EDF-732F-8C42-E986-07994ECDCCBE" containerWithKeyObject="B0A1F3EF-D5BA-444D-8FA9-608DB4270561" localFKIndex="409BAB0D-26F0-A2FE-205D-5F4014820191" name="rent_damage">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:05 UTC</createdTime>
+<generatorID>81C4AFA9-1516-D754-AB69-F935FB2E824B</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<referredTableLongName>RENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A51B3CEA-6E37-6438-918E-AD3880227ECD</referredTableID>
+<keyObject>CDC0EF6B-F2B2-1318-5B58-290439D737B2</keyObject>
+<referredKeyID>CDC0EF6B-F2B2-1318-5B58-290439D737B2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rent_agreement_no</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

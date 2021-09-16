@@ -77,37 +77,6 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="prop_no" id="1F0E4A27-8F20-3850-85A8-137EA8E09206">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 09:45:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[property number]]></commentInRDBMS>
-<generatorID>29B142B4-3523-62D8-ECA5-B4D0092A7D47</generatorID>
-<ownerDesignName>property_rental</ownerDesignName>
-<engineerTo>
-<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
-</engineerTo>
-<referedAttribute>1033FF8A-2978-6F9F-6F81-ACFF56B4589D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="rent_lease_start_date" id="8D6C5BAF-3197-26BE-04EA-50C30AB459DC">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 09:45:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Rent lease start date]]></commentInRDBMS>
-<generatorID>29B142B4-3523-62D8-ECA5-B4D0092A7D47</generatorID>
-<ownerDesignName>property_rental</ownerDesignName>
-<engineerTo>
-<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
-</engineerTo>
-<referedAttribute>531BFFA0-ED66-771C-4311-3F7E4EC6D46A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="pay_method_no" id="6BB974F5-DB25-F6B5-1C78-C90361A3D786">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 09:59:14 UTC</createdTime>
@@ -118,6 +87,22 @@
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
 </engineerTo>
 <referedAttribute>3B71E2D5-AEA4-5A76-399C-D873E742C4DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rent_agreement_no" id="5D357535-AD49-D364-1FC2-B2AADE9DCDA8">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:45:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Rental agreement number]]></commentInRDBMS>
+<generatorID>29B142B4-3523-62D8-ECA5-B4D0092A7D47</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<referedAttribute>1CDE1473-A45F-84F8-61F6-D2583478F128</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

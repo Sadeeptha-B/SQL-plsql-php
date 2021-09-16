@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="damage_no" id="E18DE712-5422-BC99-1F8A-384CB1441457">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:47:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Damage number]]></commentInRDBMS>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="dam_datetime" id="C139E169-A098-6876-4941-76FC2C4F5A35">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 09:46:04 UTC</createdTime>
@@ -26,6 +40,22 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rent_agreement_no" id="3A7C5AB5-F02E-0421-7FD1-39E1ACF33A3B">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:45:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Rental agreement number]]></commentInRDBMS>
+<generatorID>81C4AFA9-1516-D754-AB69-F935FB2E824B</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<referedAttribute>1CDE1473-A45F-84F8-61F6-D2583478F128</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="dam_type" id="73E2FD79-2170-8EBC-C773-1A40031C0287">
@@ -57,37 +87,6 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="prop_no" id="216474FA-EC62-2044-39E7-0D0B14E5115A">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 09:48:51 UTC</createdTime>
-<commentInRDBMS><![CDATA[property number]]></commentInRDBMS>
-<generatorID>81C4AFA9-1516-D754-AB69-F935FB2E824B</generatorID>
-<ownerDesignName>property_rental</ownerDesignName>
-<engineerTo>
-<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
-</engineerTo>
-<referedAttribute>1033FF8A-2978-6F9F-6F81-ACFF56B4589D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="rent_lease_start_date" id="264FC406-FCE6-A581-101F-189D3256F68E">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 09:48:51 UTC</createdTime>
-<commentInRDBMS><![CDATA[Rent lease start date]]></commentInRDBMS>
-<generatorID>81C4AFA9-1516-D754-AB69-F935FB2E824B</generatorID>
-<ownerDesignName>property_rental</ownerDesignName>
-<engineerTo>
-<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
-</engineerTo>
-<referedAttribute>531BFFA0-ED66-771C-4311-3F7E4EC6D46A</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="pay_no" id="21893C69-5760-FD69-D9E0-AD2636DEADD0">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 09:54:13 UTC</createdTime>
@@ -116,9 +115,20 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
+<attributeRef>E18DE712-5422-BC99-1F8A-384CB1441457</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="44CF5035-7C7B-5E6B-478B-E68C88BC9298" name="DAMAGE_NK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:47:58 UTC</createdTime>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<newElementsIDs>3A7C5AB5-F02E-0421-7FD1-39E1ACF33A3B,C139E169-A098-6876-4941-76FC2C4F5A35</newElementsIDs>
+<usedAttributes>
+<attributeRef>3A7C5AB5-F02E-0421-7FD1-39E1ACF33A3B</attributeRef>
 <attributeRef>C139E169-A098-6876-4941-76FC2C4F5A35</attributeRef>
-<attributeRef>216474FA-EC62-2044-39E7-0D0B14E5115A</attributeRef>
-<attributeRef>264FC406-FCE6-A581-101F-189D3256F68E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

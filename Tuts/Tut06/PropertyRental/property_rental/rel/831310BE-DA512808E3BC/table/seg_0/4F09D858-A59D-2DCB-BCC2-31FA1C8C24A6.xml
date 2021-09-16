@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F09D858-A59D-2DCB-BCC2-31FA1C8C24A6" name="TENANT">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<generatorID>ABED1006-B348-49BB-905F-3C82B9A10130</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tenant_no" id="9A33453A-ED4A-955F-4B27-550B4D5BA3AC">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tenant number]]></commentInRDBMS>
+<generatorID>72646BB3-98C5-EB32-5F5B-D6834E995A4E</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tenant_givname" id="FED28153-2601-56C4-B8EB-882B56BB2C9C">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Given name of tenant		]]></commentInRDBMS>
+<generatorID>4AAFBAC0-B5E0-7784-159F-9052A37DDB1E</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tenant_famname" id="AA41EFF6-CC59-00B6-C611-4577E7961F08">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Family name of tenant]]></commentInRDBMS>
+<generatorID>022DCC5E-5307-6638-D6E5-6EBCC6F5EDE6</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tenant_address" id="95E3A60F-42D4-BDB4-0256-6C2DD6E2678A">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[ tenant's address
+]]></commentInRDBMS>
+<generatorID>352A2A1B-9375-480F-DB08-B0FD9D5C5D32</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tenant_phone" id="F8417027-72D7-20B3-90CD-0A6039BD0665">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tenant's phone	]]></commentInRDBMS>
+<generatorID>15725653-1707-B880-F925-EA7DE67ECAB1</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92A60678-BAC5-B279-8E24-4C35C1216569" name="TENANT_PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:50:04 UTC</createdTime>
+<generatorID>5603EEAA-D522-8491-2F8A-C4B6655D6FEC</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A33453A-ED4A-955F-4B27-550B4D5BA3AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

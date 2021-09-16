@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rent_agreement_no" id="1CDE1473-A45F-84F8-61F6-D2583478F128">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:44:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Rental agreement number]]></commentInRDBMS>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="prop_no" id="1033FF8A-2978-6F9F-6F81-ACFF56B4589D">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 09:41:48 UTC</createdTime>
@@ -113,6 +127,18 @@
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<usedAttributes>
+<attributeRef>1CDE1473-A45F-84F8-61F6-D2583478F128</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C8254194-3F6C-11F8-2C66-89F8F6E17F08" name="RENTAL_NK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 10:45:32 UTC</createdTime>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<newElementsIDs>1033FF8A-2978-6F9F-6F81-ACFF56B4589D,531BFFA0-ED66-771C-4311-3F7E4EC6D46A</newElementsIDs>
 <usedAttributes>
 <attributeRef>1033FF8A-2978-6F9F-6F81-ACFF56B4589D</attributeRef>
 <attributeRef>531BFFA0-ED66-771C-4311-3F7E4EC6D46A</attributeRef>
