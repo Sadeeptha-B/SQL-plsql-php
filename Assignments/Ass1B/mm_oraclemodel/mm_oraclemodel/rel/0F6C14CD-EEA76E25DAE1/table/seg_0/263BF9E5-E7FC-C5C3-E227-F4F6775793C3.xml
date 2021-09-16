@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="263BF9E5-E7FC-C5C3-E227-F4F6775793C3" name="CLASS_TYPE">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>0D1552E4-278C-8FCE-EB62-0EA0F5C1C950</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="class_type_id" id="826FF349-9DDB-9204-F711-C4077F34A94A">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class type ID]]></commentInRDBMS>
+<generatorID>1DF44355-A1C1-5117-058F-ABC47843D01C</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="class_type_name" id="33D42252-7336-FB6C-6512-5E481C426A0B">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Name of the class type]]></commentInRDBMS>
+<generatorID>92ABD749-7D98-AFD9-2694-E95D0D690EF1</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CEB8F5AB-7FC1-4A48-B5D2-02101C85671B" name="CLASS_TYPE_PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>DE595931-0FD1-573D-1875-45C41C36C333</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="826FF349-9DDB-9204-F711-C4077F34A94A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

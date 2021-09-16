@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED2BD194-100B-9441-9620-7A32F1A65E0B" name="ASSESSMENT">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>9C9B1D18-890C-FB3C-8426-7AD049EB2797</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="member_no" id="211B482E-C84A-65FC-3772-554BA66AA347">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>B21232AE-B8A2-81D5-7182-4FC4069AA2A4</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9388821-CD93-B83D-153B-49805000999A" referredColumn="DBA4DB0D-9EFF-58FF-025F-CBE95C1D004F"/>
+</associations>
+</Column>
+<Column name="assess_date" id="2AE5B397-04C3-1F3C-D12B-24265C037047">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Assessment date]]></commentInRDBMS>
+<generatorID>5F29FA33-5596-80E3-24B8-44BF3109AEEB</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_wieght" id="86FDCA8E-A7F9-42E6-F189-928817708BA9">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Assessed weight]]></commentInRDBMS>
+<generatorID>3624332D-16B6-694C-2803-DE34AFC86EBD</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_bp" id="47CF35D8-6B15-D0C8-1C52-DE975CE65789">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Assessed blood pressure]]></commentInRDBMS>
+<generatorID>D5431C34-AC63-07A1-FF3C-054880A7A67F</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_bmi" id="DA0C9F9B-FA96-D558-8A31-C36CA3DDA29A">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Assessed BMI]]></commentInRDBMS>
+<generatorID>144754CB-0B28-2491-3D1B-ADE8079145D2</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_vo2max" id="4FC832A9-552F-2CE5-AC30-E7AA4F263B6A">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Assessed VO2Max]]></commentInRDBMS>
+<generatorID>0BE7A1D8-3B46-9FDE-7DFF-BC3AA0467059</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_id" id="02F6AA66-1DBB-DE9A-C4EF-B02EE103B539">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff ID number]]></commentInRDBMS>
+<generatorID>971D8DDC-6D16-0033-FFD5-0419652D4182</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="664F369C-A8A3-B75A-CC84-C0F6999B2EF6" referredColumn="BF95BF1F-BD3B-C146-5607-7C8586A930A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AD1D9F7A-1168-9D1D-7540-067E7F75DC04" name="ASSESSMENT_PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>9E74736D-0E79-B684-35D5-74CA43A80DED</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AE5B397-04C3-1F3C-D12B-24265C037047"/>
+<colUsage columnID="211B482E-C84A-65FC-3772-554BA66AA347"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44BEEA9F-0F51-75B1-E4C0-3223324D84DF" name="member_assessment">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>D3AC124C-1365-0140-674F-4A7891FFD345</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="211B482E-C84A-65FC-3772-554BA66AA347"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9551D53C-9843-6DB0-9769-89ADFF4548C1" name="staff_assessment">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>D547AE75-2491-51CA-B346-EDAED61B9B27</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02F6AA66-1DBB-DE9A-C4EF-B02EE103B539"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

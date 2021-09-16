@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="361DC6A6-E31B-79FB-0F87-9BA5CF84BADD" name="MEMBER_ATTENDANCE">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>06600AA9-45FC-5B03-3087-DDE0596E1476</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="enrollment_no" id="D9537B4F-D7E2-CA31-DEAD-C43973EE31F3">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Enrollment Number]]></commentInRDBMS>
+<generatorID>0055C455-6F61-6AA2-48DE-E26CD067F990</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F043200-4482-402B-12A4-8E1C645B24D3" referredColumn="2FFAA150-3C04-9251-2294-22BA2339358F"/>
+</associations>
+</Column>
+<Column name="attend_date" id="DEE23932-912F-B3A8-2C5B-348455BC97A1">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of a class session]]></commentInRDBMS>
+<generatorID>F26A2A53-73F1-1293-A44F-8CC3B0D5EFF7</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attend_session" id="17DEFC75-56EC-9DDA-4285-54CAB099A45B">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Whether the member attended a particular session]]></commentInRDBMS>
+<generatorID>DFA61F1F-8F2D-53AA-48C7-4083767EAA05</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<constraintName>chk_attended</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Absent"/>
+<valueDef value="P" description="Attended"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C400386-9D81-265B-1A1A-E0297B638AB1" name="MEMBER_ATTENDANCE_PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>39CB1BA7-DF9C-E7DE-F8FA-BC87C0B08B49</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9537B4F-D7E2-CA31-DEAD-C43973EE31F3"/>
+<colUsage columnID="DEE23932-912F-B3A8-2C5B-348455BC97A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F4C19C3-7F0F-A08A-72D1-9878CFB1FCB2" name="enroll_member_attend">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>8AAC20B5-77DE-077B-5562-1E50D214365A</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9537B4F-D7E2-CA31-DEAD-C43973EE31F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

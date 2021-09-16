@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30E83DE8-DCC3-2839-EEF6-223B62C7E7E1" name="ENROLMENT">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>2EED00DD-E1A7-2487-E869-4866D7990794</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="enrollment_no" id="2FFAA150-3C04-9251-2294-22BA2339358F">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Enrollment Number]]></commentInRDBMS>
+<generatorID>40913225-E186-8FE1-C982-684FF2B47B0D</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_id" id="652A7BAE-6302-E39B-0871-AF2D72A6AB6B">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>1BEA5A78-B761-F557-3BDE-D134C043F5B4</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE7F745C-4C27-98AE-C5A6-E980FF561B81" referredColumn="6DD59377-713A-9FBA-A5B8-200CED26934E"/>
+</associations>
+</Column>
+<Column name="class_no" id="9AB13F34-9C16-DC89-5A5E-BDABB2F59A8D">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class number: unique within a centre]]></commentInRDBMS>
+<generatorID>FA6588D3-71F0-3965-5D1D-43596DABCE4D</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE7F745C-4C27-98AE-C5A6-E980FF561B81" referredColumn="929AEB59-47D4-2BE0-3211-134909132AB1"/>
+</associations>
+</Column>
+<Column name="member_no" id="96489307-03FD-459A-68AB-9DCE1DE72293">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC269023-0F1F-4B03-A767-D2CDD7881B87" referredColumn="DBA4DB0D-9EFF-58FF-025F-CBE95C1D004F"/>
+</associations>
+</Column>
+<Column name="enroll_payment_date" id="A342778D-5FE4-C570-42B4-CCE286E31318">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member's Payment date for a class]]></commentInRDBMS>
+<generatorID>6025CC26-1225-B350-ECF5-70DE1691D9A3</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="enroll_total_attendance" id="18A1EF51-74B1-9300-26A8-934B382F332C">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[The total attendance of the member for the enrollment]]></commentInRDBMS>
+<generatorID>648618EB-FF26-CC63-DFAC-F490436587A2</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09AE14CA-997B-3217-0A24-56C06A42F0E6" name="ENROLMENT_PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>CA955CC4-2D83-884F-32C4-500A6C368584</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FFAA150-3C04-9251-2294-22BA2339358F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA151E45-0AE4-93B4-D1AE-35FF7FE05185" name="ENROLLMENT_NK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>B63AD168-6DAB-654F-FC68-2BD3BF5F24DB</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="652A7BAE-6302-E39B-0871-AF2D72A6AB6B"/>
+<colUsage columnID="9AB13F34-9C16-DC89-5A5E-BDABB2F59A8D"/>
+<colUsage columnID="96489307-03FD-459A-68AB-9DCE1DE72293"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1492D540-0D93-FD82-F56C-72FDE8266689" name="class_enrollment">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>BF420FF3-9B37-1D28-0F51-9A37CEF73B6A</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AB13F34-9C16-DC89-5A5E-BDABB2F59A8D"/>
+<colUsage columnID="652A7BAE-6302-E39B-0871-AF2D72A6AB6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58457E33-799B-32D0-95EC-917A586A2D5F" name="member_enrollment">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 19:19:08 UTC</createdTime>
+<generatorID>2354EAE8-1E2A-78EC-B2F0-97250EAED335</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96489307-03FD-459A-68AB-9DCE1DE72293"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
