@@ -31,22 +31,6 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="facility_room_no" id="FB400F50-F569-2BA6-4169-9188D56FC894">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 14:08:30 UTC</createdTime>
-<commentInRDBMS><![CDATA[Room number of the Facility]]></commentInRDBMS>
-<generatorID>13CE1F28-A36A-B9FD-2AD6-CA09E3FAB2A3</generatorID>
-<ownerDesignName>mm_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
-</engineerTo>
-<referedAttribute>69C99012-96A3-42AC-8139-082F82B8857E</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="class_no" id="020FFE0D-E9B1-1090-0D75-FF670490BDFD">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 13:49:16 UTC</createdTime>
@@ -131,16 +115,32 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="staff_id" id="226A6CC4-1548-743D-094B-BA54A49FA23E">
+<Attribute name="facility_room_no" id="FB400F50-F569-2BA6-4169-9188D56FC894">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 14:17:55 UTC</createdTime>
-<commentInRDBMS><![CDATA[Staff ID number]]></commentInRDBMS>
-<generatorID>04B03585-0E3C-5227-C635-97D2046652C6</generatorID>
+<createdTime>2021-09-16 14:08:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Room number of the Facility]]></commentInRDBMS>
+<generatorID>13CE1F28-A36A-B9FD-2AD6-CA09E3FAB2A3</generatorID>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
 </engineerTo>
-<referedAttribute>A6BFCF4C-A028-9AD2-2015-873BD7AF002C</referedAttribute>
+<referedAttribute>69C99012-96A3-42AC-8139-082F82B8857E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_type_id" id="E98D3B34-7E41-8040-8A1B-86DFC4D81838">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 18:12:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Class type ID]]></commentInRDBMS>
+<generatorID>C8DF1D66-8305-3C0A-9B3B-0BF06C4BD639</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<referedAttribute>1DF44355-A1C1-5117-058F-ABC47843D01C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -159,7 +159,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>020FFE0D-E9B1-1090-0D75-FF670490BDFD</attributeRef>
-<attributeRef>FB400F50-F569-2BA6-4169-9188D56FC894</attributeRef>
 <attributeRef>FFEF4BF3-A372-9047-4F07-71703C5E0BDB</attributeRef>
 </usedAttributes>
 </identifier>

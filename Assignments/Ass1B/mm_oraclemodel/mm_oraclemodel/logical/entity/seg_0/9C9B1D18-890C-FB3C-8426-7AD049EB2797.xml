@@ -15,6 +15,22 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_no" id="B21232AE-B8A2-81D5-7182-4FC4069AA2A4">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 14:09:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>D3AC124C-1365-0140-674F-4A7891FFD345</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<referedAttribute>ACFA7DB8-3799-AAA2-DC8C-20438FE25D88</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="assess_date" id="5F29FA33-5596-80E3-24B8-44BF3109AEEB">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 14:03:39 UTC</createdTime>
@@ -98,22 +114,6 @@
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
 </engineerTo>
 <referedAttribute>A6BFCF4C-A028-9AD2-2015-873BD7AF002C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="member_no" id="B21232AE-B8A2-81D5-7182-4FC4069AA2A4">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 14:09:38 UTC</createdTime>
-<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
-<generatorID>D3AC124C-1365-0140-674F-4A7891FFD345</generatorID>
-<ownerDesignName>mm_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
-</engineerTo>
-<referedAttribute>ACFA7DB8-3799-AAA2-DC8C-20438FE25D88</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

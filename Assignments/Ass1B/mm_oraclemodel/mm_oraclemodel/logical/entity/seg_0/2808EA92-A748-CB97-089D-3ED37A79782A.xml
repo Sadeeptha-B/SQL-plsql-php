@@ -124,6 +124,25 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="staff_first_aid_cert" id="D3350149-78C7-D58C-551E-04D353FDAB9E">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 18:05:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Whether staff member has a first aid certificate]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<constraintName>chk_staff_first_aid</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C1B77BB9-63F5-21CE-3EDF-0D5C82FEA7E4" name="STAFF_MEMBER PK">

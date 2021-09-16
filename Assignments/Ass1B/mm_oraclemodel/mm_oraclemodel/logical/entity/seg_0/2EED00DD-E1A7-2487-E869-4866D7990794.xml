@@ -15,29 +15,16 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="enroll_payment_date" id="6025CC26-1225-B350-ECF5-70DE1691D9A3">
+<Attribute name="centre_id" id="1BEA5A78-B761-F557-3BDE-D134C043F5B4">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 14:14:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[Member's Payment date for a class]]></commentInRDBMS>
+<createdTime>2021-09-16 17:21:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>BF420FF3-9B37-1D28-0F51-9A37CEF73B6A</generatorID>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="member_no" id="B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 14:16:01 UTC</createdTime>
-<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
-<generatorID>2354EAE8-1E2A-78EC-B2F0-97250EAED335</generatorID>
-<ownerDesignName>mm_oraclemodel</ownerDesignName>
-<engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
-</engineerTo>
-<referedAttribute>ACFA7DB8-3799-AAA2-DC8C-20438FE25D88</referedAttribute>
+<referedAttribute>FFEF4BF3-A372-9047-4F07-71703C5E0BDB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -60,37 +47,48 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="facility_room_no" id="B698E528-90FF-348C-74A5-3AE327D1767E">
+<Attribute name="member_no" id="B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 14:16:37 UTC</createdTime>
-<commentInRDBMS><![CDATA[Room number of the Facility]]></commentInRDBMS>
-<generatorID>BF420FF3-9B37-1D28-0F51-9A37CEF73B6A</generatorID>
+<createdTime>2021-09-16 14:16:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>2354EAE8-1E2A-78EC-B2F0-97250EAED335</generatorID>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
 </engineerTo>
-<referedAttribute>FB400F50-F569-2BA6-4169-9188D56FC894</referedAttribute>
+<referedAttribute>ACFA7DB8-3799-AAA2-DC8C-20438FE25D88</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="centre_id" id="9FF1D6C0-2A55-0503-4E88-7D092601D51E">
+<Attribute name="enroll_payment_date" id="6025CC26-1225-B350-ECF5-70DE1691D9A3">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 14:16:37 UTC</createdTime>
-<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
-<generatorID>BF420FF3-9B37-1D28-0F51-9A37CEF73B6A</generatorID>
+<createdTime>2021-09-16 14:14:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member's Payment date for a class]]></commentInRDBMS>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
 </engineerTo>
-<referedAttribute>FFEF4BF3-A372-9047-4F07-71703C5E0BDB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="enroll_total_attendance" id="648618EB-FF26-CC63-DFAC-F490436587A2">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 18:08:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[The total attendance of the member for the enrollment]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -103,11 +101,9 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>6025CC26-1225-B350-ECF5-70DE1691D9A3</attributeRef>
 <attributeRef>B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2</attributeRef>
 <attributeRef>FA6588D3-71F0-3965-5D1D-43596DABCE4D</attributeRef>
-<attributeRef>B698E528-90FF-348C-74A5-3AE327D1767E</attributeRef>
-<attributeRef>9FF1D6C0-2A55-0503-4E88-7D092601D51E</attributeRef>
+<attributeRef>1BEA5A78-B761-F557-3BDE-D134C043F5B4</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

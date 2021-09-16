@@ -99,6 +99,22 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="manager_staff_id" id="C9F17A0F-05DA-70E3-5559-9E48E082AA6C">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 15:50:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Staff ID number]]></commentInRDBMS>
+<generatorID>F49C910D-985E-A22D-E43F-D0CB580C2A15</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<referedAttribute>A6BFCF4C-A028-9AD2-2015-873BD7AF002C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E7E69F71-5DBB-B24E-3263-4B6F4512ACF3" name="CENTRE PK">

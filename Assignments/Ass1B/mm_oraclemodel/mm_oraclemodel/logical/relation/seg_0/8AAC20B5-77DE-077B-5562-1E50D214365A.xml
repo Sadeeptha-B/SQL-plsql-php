@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="staff_class" directorySegmentName="seg_0" id="04B03585-0E3C-5227-C635-97D2046652C6">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="enroll_member_attend" directorySegmentName="seg_0" id="8AAC20B5-77DE-077B-5562-1E50D214365A">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 14:17:55 UTC</createdTime>
+<createdTime>2021-09-16 18:37:00 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
 </engineerTo>
-<sourcePk>C1B77BB9-63F5-21CE-3EDF-0D5C82FEA7E4</sourcePk>
-<identifying>false</identifying>
-<nameOnSource>runs</nameOnSource>
+<sourcePk>CA955CC4-2D83-884F-32C4-500A6C368584</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has</nameOnSource>
 <nameOnTarget> </nameOnTarget>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>2808EA92-A748-CB97-089D-3ED37A79782A</sourceEntity>
+<sourceEntity>2EED00DD-E1A7-2487-E869-4866D7990794</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>BEA98C8F-F5A9-FB5A-4C63-6B9DD9297D0E</targetEntity>
+<targetEntity>06600AA9-45FC-5B03-3087-DDE0596E1476</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

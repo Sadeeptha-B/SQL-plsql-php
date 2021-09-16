@@ -128,7 +128,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="centre_id" id="E95E8006-6BB0-8F6E-1513-FB9B98BD584B">
+<Attribute name="nominated_centre_id" id="E95E8006-6BB0-8F6E-1513-FB9B98BD584B">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 14:09:12 UTC</createdTime>
 <commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
@@ -138,6 +138,23 @@
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
 </engineerTo>
 <referedAttribute>716D832C-1DE8-4AF8-8EF9-E161F959293A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_referred" id="5EA0AC80-BB69-75BF-E0A1-97083A1336E4">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 15:53:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
+<generatorID>BAC0064A-38DA-C794-EA74-F753A26E98B3</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>ACFA7DB8-3799-AAA2-DC8C-20438FE25D88</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
