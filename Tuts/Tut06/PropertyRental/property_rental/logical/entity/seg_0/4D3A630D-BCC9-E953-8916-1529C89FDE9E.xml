@@ -58,6 +58,22 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
+<Attribute name="owner_no" id="8709E194-5C67-B953-BE6A-1697B7B7F358">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 09:37:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[owner id]]></commentInRDBMS>
+<generatorID>533C9A0E-1412-FC71-F502-4DBDFBDB519E</generatorID>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<referedAttribute>2419F922-DFC1-0A97-6C9A-D8DE556BB805</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="0B23978B-08CC-2CB6-0726-287241534D5B" name="PROPERTY PK">

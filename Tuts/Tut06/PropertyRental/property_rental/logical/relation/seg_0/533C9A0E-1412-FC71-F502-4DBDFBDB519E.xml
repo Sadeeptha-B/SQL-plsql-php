@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="owner_property" directorySegmentName="seg_0" id="533C9A0E-1412-FC71-F502-4DBDFBDB519E">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 09:37:34 UTC</createdTime>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<sourcePk>7EEF66AF-74EA-4F67-5DF4-9343247F5B9B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>owns</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C5ED9580-D5A0-AB38-222B-732806E27804</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4D3A630D-BCC9-E953-8916-1529C89FDE9E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

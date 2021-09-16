@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FF44530E-65C0-3BA8-6FA8-8BD47FDA2FA1" name="PAYMENT">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98DF7507-FC1E-E4EE-7410-963E266D86F8" name="DAMAGE">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 07:42:26 UTC</createdTime>
+<createdTime>2021-09-16 09:45:50 UTC</createdTime>
 <ownerDesignName>property_rental</ownerDesignName>
 <engineerTo>
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
@@ -15,24 +15,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="pay_no" id="ADD55D5E-43B6-9984-133C-70EF4D769BB9">
+<Attribute name="dam_datetime" id="C139E169-A098-6876-4941-76FC2C4F5A35">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 07:42:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Payment number]]></commentInRDBMS>
-<ownerDesignName>property_rental</ownerDesignName>
-<engineerTo>
-<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="pay_date" id="C603A92D-1E98-DA3F-8064-3A859FDB6B3D">
-<createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 07:43:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[Payment date]]></commentInRDBMS>
+<createdTime>2021-09-16 09:46:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Damage date]]></commentInRDBMS>
 <ownerDesignName>property_rental</ownerDesignName>
 <engineerTo>
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
@@ -42,30 +28,24 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="pay_type" id="72C51433-D719-F4D4-4C99-A8378C567DD1">
+<Attribute name="dam_type" id="73E2FD79-2170-8EBC-C773-1A40031C0287">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 10:27:51 UTC</createdTime>
-<commentInRDBMS><![CDATA[Payment type: Rental, Damage, Bond]]></commentInRDBMS>
+<createdTime>2021-09-16 09:46:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Damage type]]></commentInRDBMS>
 <ownerDesignName>property_rental</ownerDesignName>
 <engineerTo>
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
 </engineerTo>
-<constraintName>chk_payment_type</constraintName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<listOfValues>
-<valueDef value="B" description="Bond"/>
-<valueDef value="D" description="Damage"/>
-<valueDef value="R" description="Rental"/>
-</listOfValues>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="pay_amount" id="A07EAD5E-D819-82AE-7FB4-001547716D90">
+<Attribute name="dam_cost" id="241FA7D6-05BF-9037-4617-7FF25101E606">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 07:45:53 UTC</createdTime>
-<commentInRDBMS><![CDATA[Payment amount]]></commentInRDBMS>
+<createdTime>2021-09-16 09:47:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Damage cost]]></commentInRDBMS>
 <ownerDesignName>property_rental</ownerDesignName>
 <engineerTo>
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
@@ -77,11 +57,11 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,7,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="prop_no" id="1F0E4A27-8F20-3850-85A8-137EA8E09206">
+<Attribute name="prop_no" id="216474FA-EC62-2044-39E7-0D0B14E5115A">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 09:45:14 UTC</createdTime>
+<createdTime>2021-09-16 09:48:51 UTC</createdTime>
 <commentInRDBMS><![CDATA[property number]]></commentInRDBMS>
-<generatorID>29B142B4-3523-62D8-ECA5-B4D0092A7D47</generatorID>
+<generatorID>81C4AFA9-1516-D754-AB69-F935FB2E824B</generatorID>
 <ownerDesignName>property_rental</ownerDesignName>
 <engineerTo>
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
@@ -93,11 +73,11 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rent_lease_start_date" id="8D6C5BAF-3197-26BE-04EA-50C30AB459DC">
+<Attribute name="rent_lease_start_date" id="264FC406-FCE6-A581-101F-189D3256F68E">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 09:45:14 UTC</createdTime>
+<createdTime>2021-09-16 09:48:51 UTC</createdTime>
 <commentInRDBMS><![CDATA[Rent lease start date]]></commentInRDBMS>
-<generatorID>29B142B4-3523-62D8-ECA5-B4D0092A7D47</generatorID>
+<generatorID>81C4AFA9-1516-D754-AB69-F935FB2E824B</generatorID>
 <ownerDesignName>property_rental</ownerDesignName>
 <engineerTo>
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
@@ -108,16 +88,17 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="pay_method_no" id="6BB974F5-DB25-F6B5-1C78-C90361A3D786">
+<Attribute name="pay_no" id="21893C69-5760-FD69-D9E0-AD2636DEADD0">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 09:59:14 UTC</createdTime>
-<commentInRDBMS><![CDATA[Payment type number]]></commentInRDBMS>
-<generatorID>E23A1CE7-3B9D-0E2C-1FBB-030ABE04F7AA</generatorID>
+<createdTime>2021-09-16 09:54:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Payment number]]></commentInRDBMS>
+<generatorID>CF80090B-D133-A466-912A-104EE1F0EFF8</generatorID>
 <ownerDesignName>property_rental</ownerDesignName>
 <engineerTo>
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
 </engineerTo>
-<referedAttribute>3B71E2D5-AEA4-5A76-399C-D873E742C4DC</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>ADD55D5E-43B6-9984-133C-70EF4D769BB9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -126,16 +107,18 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="6A4DBE3B-9D72-2491-15FB-6450A909B430" name="PAYMENT PK">
+<identifier id="B7727CFD-1585-71F8-B7B4-BE90E43D7590" name="Damage PK">
 <createdBy>Sadeeptha</createdBy>
-<createdTime>2021-09-16 07:43:33 UTC</createdTime>
+<createdTime>2021-09-16 09:46:17 UTC</createdTime>
 <ownerDesignName>property_rental</ownerDesignName>
 <engineerTo>
 <item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>ADD55D5E-43B6-9984-133C-70EF4D769BB9</attributeRef>
+<attributeRef>C139E169-A098-6876-4941-76FC2C4F5A35</attributeRef>
+<attributeRef>216474FA-EC62-2044-39E7-0D0B14E5115A</attributeRef>
+<attributeRef>264FC406-FCE6-A581-101F-189D3256F68E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

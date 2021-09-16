@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD373979-7D51-B423-A5C6-617F5D74E2C0" name="PAYMENT_METHOD">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 09:56:06 UTC</createdTime>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pay_method_no" id="3B71E2D5-AEA4-5A76-399C-D873E742C4DC">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 09:56:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Payment type number]]></commentInRDBMS>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pay_method_name" id="C740765D-B567-0CF9-7945-24F4C8304EE3">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 09:56:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Payment type name]]></commentInRDBMS>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FDDBF817-DB57-D56F-CF89-C78D51CE2B97" name="PAYMENT_TYPE PK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 09:56:23 UTC</createdTime>
+<ownerDesignName>property_rental</ownerDesignName>
+<engineerTo>
+<item key="831310BE-BA2B-B8DC-31DE-DA512808E3BC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3B71E2D5-AEA4-5A76-399C-D873E742C4DC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
