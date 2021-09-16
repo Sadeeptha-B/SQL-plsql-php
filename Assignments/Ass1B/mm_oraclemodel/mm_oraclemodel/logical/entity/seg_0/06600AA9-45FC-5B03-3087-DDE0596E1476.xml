@@ -63,9 +63,23 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="attend_record" id="DFA61F1F-8F2D-53AA-48C7-4083767EAA05">
+<Attribute name="attend_date" id="F26A2A53-73F1-1293-A44F-8CC3B0D5EFF7">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 18:53:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Date of a class session]]></commentInRDBMS>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="attend_session" id="DFA61F1F-8F2D-53AA-48C7-4083767EAA05">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:34:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Whether the member attended a particular session]]></commentInRDBMS>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
@@ -95,6 +109,7 @@
 <attributeRef>9DBE05D8-C59F-E4C3-81B5-07D530C6DBEF</attributeRef>
 <attributeRef>9DA601ED-8249-F18F-4F7E-C270B38DE6EB</attributeRef>
 <attributeRef>9F28CC7C-FB73-5774-08CB-F40B856BF48F</attributeRef>
+<attributeRef>F26A2A53-73F1-1293-A44F-8CC3B0D5EFF7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

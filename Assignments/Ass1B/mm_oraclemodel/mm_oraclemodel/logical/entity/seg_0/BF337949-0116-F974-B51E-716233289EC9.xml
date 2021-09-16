@@ -76,6 +76,7 @@
 <Attribute name="facility_capacity" id="E9348D1E-AEB4-0303-B0F7-674783534C73">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 13:32:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[The capacity of the facility]]></commentInRDBMS>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>

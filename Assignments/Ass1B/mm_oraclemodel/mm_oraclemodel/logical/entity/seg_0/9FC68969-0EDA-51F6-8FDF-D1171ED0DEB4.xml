@@ -66,7 +66,8 @@
 <Attribute name="staff_class_leader" id="409CC925-CD81-9F9C-33E5-80BF399F1375">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:17:41 UTC</createdTime>
-<commentInRDBMS><![CDATA[Whether a staff member is the class leader]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Whether a staff member is the class leader
+	Y: Yes, N: No]]></commentInRDBMS>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>

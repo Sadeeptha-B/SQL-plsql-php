@@ -89,6 +89,14 @@
 <Attribute name="staff_role" id="431053CC-A90A-3D25-E1CB-ADE65F5C81EB">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 13:27:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Specify staff role:
+Administration (A)
+Cleaner (C)
+Instructor Dry (D)
+Instructor Pool (P)
+Manager (only one per centre) (M)
+Sales (S)
+Security (T)]]></commentInRDBMS>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
@@ -127,7 +135,8 @@
 <Attribute name="staff_first_aid_cert" id="D3350149-78C7-D58C-551E-04D353FDAB9E">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:05:28 UTC</createdTime>
-<commentInRDBMS><![CDATA[Whether staff member has a first aid certificate]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Whether staff member has a first aid certificate
+	Y: Yes, N:No]]></commentInRDBMS>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <engineerTo>
 <item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
