@@ -108,6 +108,22 @@
 </listOfValues>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="centre_id" id="5ED4EAC8-484C-8C3F-53C1-3E6A52BF64AE">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 14:01:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>DC54F4B6-C33C-DDDF-F736-B39947EEF27F</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<referedAttribute>716D832C-1DE8-4AF8-8EF9-E161F959293A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C1B77BB9-63F5-21CE-3EDF-0D5C82FEA7E4" name="STAFF_MEMBER PK">

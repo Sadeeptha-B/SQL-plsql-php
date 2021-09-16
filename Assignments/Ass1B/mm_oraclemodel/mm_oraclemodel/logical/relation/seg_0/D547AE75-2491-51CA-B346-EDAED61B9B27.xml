@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="staff_assessment" directorySegmentName="seg_0" id="D547AE75-2491-51CA-B346-EDAED61B9B27">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 14:07:49 UTC</createdTime>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<sourcePk>C1B77BB9-63F5-21CE-3EDF-0D5C82FEA7E4</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>offers</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2808EA92-A748-CB97-089D-3ED37A79782A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9C9B1D18-890C-FB3C-8426-7AD049EB2797</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

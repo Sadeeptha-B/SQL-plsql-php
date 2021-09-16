@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="class_enrollment" directorySegmentName="seg_0" id="BF420FF3-9B37-1D28-0F51-9A37CEF73B6A">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 14:16:37 UTC</createdTime>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<sourcePk>390FC1B4-81CB-5AA2-DF7B-E686C689E24D</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BEA98C8F-F5A9-FB5A-4C63-6B9DD9297D0E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2EED00DD-E1A7-2487-E869-4866D7990794</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

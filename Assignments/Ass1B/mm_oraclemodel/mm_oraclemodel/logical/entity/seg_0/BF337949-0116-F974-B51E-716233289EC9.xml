@@ -70,6 +70,22 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="centre_id" id="6045B3ED-B597-2573-3753-E3ADBD095629">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-16 14:02:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
+<generatorID>BFCDC528-77E8-7679-D077-F5EA20B91236</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+</engineerTo>
+<referedAttribute>716D832C-1DE8-4AF8-8EF9-E161F959293A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="B32D5760-DEA7-38BB-923A-242DCEAF41E6" name="FACILITY PK">
@@ -82,6 +98,7 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>69C99012-96A3-42AC-8139-082F82B8857E</attributeRef>
+<attributeRef>6045B3ED-B597-2573-3753-E3ADBD095629</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
