@@ -18,14 +18,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="6F043200-4482-402B-12A4-8E1C645B24D3" referredColumn="2FFAA150-3C04-9251-2294-22BA2339358F"/>
 </associations>
 </Column>
-<Column name="attend_date" id="DEE23932-912F-B3A8-2C5B-348455BC97A1">
+<Column name="member_attend_date" id="DEE23932-912F-B3A8-2C5B-348455BC97A1">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 19:19:08 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date of a class session]]></commentInRDBMS>
@@ -37,7 +37,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="attend_session" id="17DEFC75-56EC-9DDA-4285-54CAB099A45B">
+<Column name="member_attend_session" id="17DEFC75-56EC-9DDA-4285-54CAB099A45B">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 19:19:08 UTC</createdTime>
 <commentInRDBMS><![CDATA[Whether the member attended a particular session]]></commentInRDBMS>

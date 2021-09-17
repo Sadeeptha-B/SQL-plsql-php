@@ -130,7 +130,7 @@ Security (T)]]></commentInRDBMS>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="staff_first_aid_cert" id="D3350149-78C7-D58C-551E-04D353FDAB9E">
 <createdBy>Sadeeptha</createdBy>
@@ -158,8 +158,9 @@ Security (T)]]></commentInRDBMS>
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 13:25:22 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

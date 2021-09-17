@@ -129,7 +129,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_type_id" id="E98D3B34-7E41-8040-8A1B-86DFC4D81838">
 <createdBy>Sadeeptha</createdBy>
@@ -145,7 +145,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_gender_restr" id="7286C101-2368-F97A-B52C-BCA2AC413430">
 <createdBy>Sadeeptha</createdBy>
@@ -174,8 +174,9 @@
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 13:50:33 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_no" id="12939384-6FD6-5419-0FE5-E1819662A48B">
 <createdBy>Sadeeptha</createdBy>
@@ -59,7 +59,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="staff_id" id="5A8B6FEC-8225-60BD-A5D1-15A463EB694D">
 <createdBy>Sadeeptha</createdBy>
@@ -75,9 +75,9 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="staff_class_leader" id="409CC925-CD81-9F9C-33E5-80BF399F1375">
+<Attribute name="class_staff_leader" id="409CC925-CD81-9F9C-33E5-80BF399F1375">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:17:41 UTC</createdTime>
 <commentInRDBMS><![CDATA[Whether a staff member is the class leader
@@ -103,8 +103,9 @@
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:20:27 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -115,8 +116,9 @@
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 19:14:50 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="false"/>
 </engineerTo>
 <newElementsIDs>E6E8017F-77C6-AB23-442E-BC926AA9D36C,12939384-6FD6-5419-0FE5-E1819662A48B,5A8B6FEC-8225-60BD-A5D1-15A463EB694D</newElementsIDs>
 <usedAttributes>

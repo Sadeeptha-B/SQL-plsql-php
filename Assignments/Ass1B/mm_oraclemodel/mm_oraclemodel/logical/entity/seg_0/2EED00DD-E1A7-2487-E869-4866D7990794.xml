@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2EED00DD-E1A7-2487-E869-4866D7990794" name="ENROLMENT">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2EED00DD-E1A7-2487-E869-4866D7990794" name="ENROLLMENT">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 14:14:14 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
@@ -43,7 +43,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="class_no" id="FA6588D3-71F0-3965-5D1D-43596DABCE4D">
 <createdBy>Sadeeptha</createdBy>
@@ -59,7 +59,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="member_no" id="B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2">
 <createdBy>Sadeeptha</createdBy>
@@ -75,7 +75,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="enroll_payment_date" id="6025CC26-1225-B350-ECF5-70DE1691D9A3">
 <createdBy>Sadeeptha</createdBy>
@@ -110,8 +110,9 @@
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 14:14:38 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -122,8 +123,9 @@
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 19:11:36 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="false"/>
 </engineerTo>
 <newElementsIDs>1BEA5A78-B761-F557-3BDE-D134C043F5B4,FA6588D3-71F0-3965-5D1D-43596DABCE4D,B3A48BA6-31EC-7175-89E3-F97F1EE7D5F2</newElementsIDs>
 <usedAttributes>

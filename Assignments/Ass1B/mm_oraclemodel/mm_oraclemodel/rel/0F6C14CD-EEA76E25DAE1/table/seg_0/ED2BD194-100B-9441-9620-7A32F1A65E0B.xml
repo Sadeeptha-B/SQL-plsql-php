@@ -18,7 +18,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -103,12 +103,25 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="664F369C-A8A3-B75A-CC84-C0F6999B2EF6" referredColumn="BF95BF1F-BD3B-C146-5607-7C8586A930A7"/>
 </associations>
+</Column>
+<Column name="assessment_no" id="3A0EC38E-9767-0743-96FA-FFE930A15180">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-17 03:14:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Assessment Number]]></commentInRDBMS>
+<generatorID>32123CB2-16EB-3357-8E36-0EC28FB47C43</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -121,8 +134,19 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="2AE5B397-04C3-1F3C-D12B-24265C037047"/>
+<colUsage columnID="3A0EC38E-9767-0743-96FA-FFE930A15180"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB3E3EE4-D6FB-F8AC-3010-C8388A7EE203" name="ASSESSMENT_NK">
+<createdBy>Sadeeptha</createdBy>
+<createdTime>2021-09-17 03:14:30 UTC</createdTime>
+<generatorID>F5DAEA3C-C1C6-0800-E4C5-688EEFE7AC3F</generatorID>
+<ownerDesignName>mm_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
 <colUsage columnID="211B482E-C84A-65FC-3772-554BA66AA347"/>
+<colUsage columnID="2AE5B397-04C3-1F3C-D12B-24265C037047"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="44BEEA9F-0F51-75B1-E4C0-3223324D84DF" name="member_assessment">

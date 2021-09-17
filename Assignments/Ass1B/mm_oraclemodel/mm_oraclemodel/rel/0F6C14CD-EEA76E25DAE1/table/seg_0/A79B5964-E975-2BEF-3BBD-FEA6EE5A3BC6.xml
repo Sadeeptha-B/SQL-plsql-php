@@ -83,7 +83,7 @@
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -113,7 +113,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="centre_id" id="DB6C4409-BD57-DDDF-A409-6CB85B3737A1">
+<Column name="nominated_centre_id" id="DB6C4409-BD57-DDDF-A409-6CB85B3737A1">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 19:19:08 UTC</createdTime>
 <commentInRDBMS><![CDATA[Centre ID]]></commentInRDBMS>
@@ -123,14 +123,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="336AB91F-DDBF-EA44-B34A-B8E23A8FEFC3" referredColumn="D13B1C8E-9D26-0660-17A0-5DAA2704BC63"/>
 </associations>
 </Column>
-<Column name="member_no1" id="39088292-00D7-C0FA-7BCB-F50DCCE48B90">
+<Column name="member_referred" id="39088292-00D7-C0FA-7BCB-F50DCCE48B90">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 19:19:08 UTC</createdTime>
 <commentInRDBMS><![CDATA[Member number]]></commentInRDBMS>
@@ -140,7 +140,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

@@ -68,7 +68,7 @@
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
@@ -86,7 +86,7 @@
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="staff_id" id="748855B9-AC08-5476-1054-819716E2EC4E">
+<Column name="manager_staff_id" id="748855B9-AC08-5476-1054-819716E2EC4E">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 19:19:08 UTC</createdTime>
 <commentInRDBMS><![CDATA[Staff ID number]]></commentInRDBMS>
@@ -96,7 +96,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>

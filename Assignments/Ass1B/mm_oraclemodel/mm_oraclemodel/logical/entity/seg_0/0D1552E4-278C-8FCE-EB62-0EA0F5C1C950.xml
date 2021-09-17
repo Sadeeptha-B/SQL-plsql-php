@@ -49,8 +49,9 @@
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:11:10 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -31,7 +31,7 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="attend_date" id="F26A2A53-73F1-1293-A44F-8CC3B0D5EFF7">
+<Attribute name="member_attend_date" id="F26A2A53-73F1-1293-A44F-8CC3B0D5EFF7">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:53:03 UTC</createdTime>
 <commentInRDBMS><![CDATA[Date of a class session]]></commentInRDBMS>
@@ -44,7 +44,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="attend_session" id="DFA61F1F-8F2D-53AA-48C7-4083767EAA05">
+<Attribute name="member_attend_session" id="DFA61F1F-8F2D-53AA-48C7-4083767EAA05">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:34:49 UTC</createdTime>
 <commentInRDBMS><![CDATA[Whether the member attended a particular session]]></commentInRDBMS>
@@ -69,8 +69,9 @@
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 18:37:00 UTC</createdTime>
 <ownerDesignName>mm_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="true"/>
+<item key="0F6C14CD-794B-A4FD-F1E0-EEA76E25DAE1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

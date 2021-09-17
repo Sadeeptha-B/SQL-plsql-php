@@ -31,7 +31,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -48,7 +48,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -65,14 +65,14 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="0C729F7B-5D16-F249-41C2-BD9550F6A8A3" referredColumn="BF95BF1F-BD3B-C146-5607-7C8586A930A7"/>
 </associations>
 </Column>
-<Column name="staff_class_leader" id="4B38C892-60C0-2822-D099-859CC316A2F8">
+<Column name="class_staff_leader" id="4B38C892-60C0-2822-D099-859CC316A2F8">
 <createdBy>Sadeeptha</createdBy>
 <createdTime>2021-09-16 19:19:08 UTC</createdTime>
 <commentInRDBMS><![CDATA[Whether a staff member is the class leader
