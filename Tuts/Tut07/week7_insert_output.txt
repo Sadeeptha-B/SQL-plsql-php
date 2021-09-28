@@ -1,0 +1,226 @@
+SQL> 
+SQL> /*
+SQL>Databases Week 7 Tutorial
+SQL>week7_insert.sql
+SQL>
+SQL>Author:
+SQL>    Sadeeptha Bandara
+SQL>Created : 28th September 2021    
+SQL>*/
+SQL> 
+SQL> /*- student table*/
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      11111111,
+  3      'Bloggs',
+  4      'Fred',
+  5      TO_DATE('01-Jan-2003', 'dd-Mon-yyyy')
+  6  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      11111112,
+  3      'Nice',
+  4      'Nick',
+  5      TO_DATE('10-Oct-2004', 'dd-Mon-yyyy')
+  6  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      11111113,
+  3      'Wheat',
+  4      'Wendy',
+  5      TO_DATE('05-May-2005', 'dd-Mon-yyyy')
+  6  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO student VALUES (
+  2      11111114,
+  3      'Sheen',
+  4      'Cindy',
+  5      TO_DATE('25-Dec-2004', 'dd-Mon-yyyy')
+  6  );
+
+1 row inserted.
+
+SQL> 
+SQL> 
+SQL> /* unit table */
+SQL> INSERT INTO unit VALUES (
+  2      'FIT9999',
+  3      'FIT Last Unit'
+  4  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO unit VALUES (
+  2      'FIT9132',
+  3      'Introduction to Databases'
+  4  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO unit VALUES (
+  2      'FIT9161',
+  3      'Project'
+  4  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO unit VALUES (
+  2      'FIT5111',
+  3      'Student''s Life'
+  4  );
+
+1 row inserted.
+
+SQL> 
+SQL> 
+SQL> /*enrolment table */
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT9132',
+  4      2020,
+  5      '1',
+  6      35,
+  7      'N'
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT9161',
+  4      2020,
+  5      '1',
+  6      61,
+  7      'C'
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT9132',
+  4      2020,
+  5      '2',
+  6      42,
+  7      'N'
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT5111',
+  4      2020,
+  5      '2',
+  6      76,
+  7      'D'
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111111,
+  3      'FIT9132',
+  4      2021,
+  5      '1',
+  6      NULL,
+  7      NULL
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111112,
+  3      'FIT9132',
+  4      2020,
+  5      '2',
+  6      83,
+  7      'HD'
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111112,
+  3      'FIT9161',
+  4      2020,
+  5      '2',
+  6      79,
+  7      'D'
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111113,
+  3      'FIT9132',
+  4      2021,
+  5      '1',
+  6      NULL,
+  7      NULL
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111113,
+  3      'FIT5111',
+  4      2021,
+  5      '1',
+  6      NULL,
+  7      NULL
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111114,
+  3      'FIT9132',
+  4      2021,
+  5      '1',
+  6      NULL,
+  7      NULL
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> INSERT INTO enrolment VALUES (
+  2      11111114,
+  3      'FIT5111',
+  4      2021,
+  5      '1',
+  6      NULL,
+  7      NULL
+  8  );
+
+1 row inserted.
+
+SQL> 
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> 
+SQL> SPOOL OFF
