@@ -12,6 +12,7 @@ Created : 28th September 2021
 */
 
 /*7.3.1: Basic Insert*/
+/*=================================================================== */
 
 /*- student table*/
 INSERT INTO student VALUES (
@@ -167,8 +168,8 @@ INSERT INTO enrolment VALUES (
 
 COMMIT;
 
-/*7.3.2: Using Sequence
-*/
+/*7.3.2: Using Sequence*/
+/*=================================================================== */
 DROP SEQUENCE student_seq;
 
 CREATE SEQUENCE student_seq START WITH 11111115 INCREMENT BY 1;
@@ -203,7 +204,72 @@ INSERT INTO enrolment VALUES (
 
 COMMIT;
 
-SELECT * FROM enrolment;
+SELECT
+    *
+FROM
+    enrolment;
+
+/*7.3.3: Advanced Insert */
+/*=================================================================== */
+INSERT INTO student VALUES (
+    student_seq.NEXTVAL,
+    'Cruise',
+    'Tom',
+    TO_DATE('03-Jul-1962', 'dd-Mon-yyyy')
+);
+
+INSERT INTO enrolment VALUES (
+    student_seq.CURRVAL,
+    (
+        SELECT
+            unit_code
+        FROM
+            unit
+        WHERE
+            unit_name = 'Introduction to Databases'
+    ),
+    2021,
+    '2',
+    NULL,
+    NULL
+);
+
+COMMIT;
+
+SELECT
+    *
+FROM
+    student;
+
+SELECT
+    *
+FROM
+    enrolment;
+
+/*7.3.4: Creating and inserting data in a single SQL statement*/
+/*=================================================================== */
+DROP TABLE fit5111_student PURGE;
+
+CREATE TABLE fit5111_student
+    AS
+        SELECT
+            *
+        FROM
+            enrolment
+        WHERE
+            unit_code = 'FIT5111';
+
+/* Check if table exists*/
+SELECT
+    *
+FROM
+    cat;
+
+/* List out contents*/
+SELECT
+    *
+FROM
+    fit5111_student;
 
 SPOOL OFF
 
