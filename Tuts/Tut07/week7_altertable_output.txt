@@ -1,0 +1,44 @@
+SQL> 
+SQL> /*
+SQL>Databases Week 7 Tutorial
+SQL>week7_altertable.sql
+SQL>
+SQL>Author:
+SQL>    Sadeeptha Bandara
+SQL>Created : 28th September 2021    
+SQL>*/
+SQL> 
+SQL> ALTER TABLE unit ADD unit_credit NUMBER(2, 0) DEFAULT 6 NOT NULL;
+
+Table UNIT altered.
+
+SQL> 
+SQL> INSERT INTO unit VALUES (
+  2      'FIT2102',
+  3      'Programming Paradigms',
+  4      12
+  5  );
+
+1 row inserted.
+
+SQL> 
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> 
+SQL> SELECT
+  2      *
+  3  FROM
+  4      unit;
+
+UNIT_CO UNIT_NAME                                          UNIT_CREDIT
+------- -------------------------------------------------- -----------
+FIT9999 FIT Last Unit                                                6
+FIT9132 Introduction to Databases                                    6
+FIT9161 Project                                                      6
+FIT5111 Student's Life                                               6
+FIT2102 Programming Paradigms                                       12
+
+SQL> 
+SQL> SPOOL OFF
