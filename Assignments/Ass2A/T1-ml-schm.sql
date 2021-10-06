@@ -107,9 +107,7 @@ COMMENT ON COLUMN reserve.bor_no IS
 ALTER TABLE reserve ADD CONSTRAINT reserve_pk PRIMARY KEY ( reserve_id );
 
 ALTER TABLE reserve ADD (
-    CONSTRAINT uq_branch_code UNIQUE ( branch_code ),
-    CONSTRAINT uq_bc_id UNIQUE ( bc_id ),
-    CONSTRAINT uq_reserve_date_time UNIQUE ( reserve_date_time_placed )
+    CONSTRAINT uq_natural_key UNIQUE ( branch_code, bc_id, reserve_date_time_placed)
 );
 
 /* Add all missing FK Constraints below here*/
