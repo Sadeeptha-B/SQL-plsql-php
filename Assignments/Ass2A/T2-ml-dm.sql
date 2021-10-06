@@ -15,9 +15,9 @@ branch_contact_no
   (This assumption is used in the queries for bc_id in part iii and iv)
 - Since Part iv in the spec tells to assume that only one Ada LOVELACE exists in the database, the home branch is queried from
 the borrower table using Ada's name
-- Since a particular person can make multiple reservations for a single copy as per the data model, in querying the reserve day,
-it is assumed that the initial reserve day is known.
-
+- Since a particular person can make multiple reservations for a single copy as per the data model, it is possible 
+that Ada LOVELACE can have multiple reservations of the same book at different days.
+Therefore, in querying the reserve day, it is assumed that the initial reserve day is known.
 */
 
 /* 2 (b) (i)*/
