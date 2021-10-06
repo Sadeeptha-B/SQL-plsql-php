@@ -30,6 +30,9 @@ The data for the LOAN table
 -----------------------------------
    bc_id 2 in branch 10, bc_id 3 in branch 12
 
+
+The script contains update statements to maintain the data integrity of the 
+branch_count_books
 */
 
 /* 2 (a) Load the BOOK_COPY, LOAN and RESERVE tables with your own*/
@@ -60,6 +63,12 @@ INSERT INTO book_copy VALUES (
     '005.432 L761P'
 );
 
+UPDATE branch
+SET
+    branch_count_books = 3
+WHERE
+    branch_code = 10;
+
 INSERT INTO book_copy VALUES (
     13,
     1,
@@ -83,6 +92,12 @@ INSERT INTO book_copy VALUES (
     'N',
     '823.914 H219A'
 );
+
+UPDATE branch
+SET
+    branch_count_books = 3
+WHERE
+    branch_code = 13;
 
 INSERT INTO book_copy VALUES (
     12,
@@ -115,6 +130,12 @@ INSERT INTO book_copy VALUES (
     'N',
     '823.914 H219A'
 );
+
+UPDATE branch
+SET
+    branch_count_books = 4
+WHERE
+    branch_code = 12;
 
 /*loan table*/
 INSERT INTO loan VALUES (
