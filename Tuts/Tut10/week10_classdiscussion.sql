@@ -40,13 +40,21 @@ ORDER BY
 SELECT
     studfname
     || ' '
-    || studlname AS fullname,
-    to_char(studdob, 'dd-Mon-yyyy') AS dob
+    || studlname                         AS fullname,
+    to_char(studdob, 'dd-Mon-yyyy')      AS dob
 FROM
          uni.student
     NATURAL JOIN uni.enrolment
 WHERE
-    unitcode = 'FIT9132'
-GROUP BY studdob, studfname 
+        unitcode = 'FIT9132'
+    AND studdob = (
+        SELECT
+            MIN(studdob)
+        FROM
+                 uni.student
+            NATURAL JOIN uni.enrolment
+        WHERE
+            unitcode = 'FIT9132'
+    )
 ORDER BY
     studid;
