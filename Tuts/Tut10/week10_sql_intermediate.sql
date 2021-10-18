@@ -141,24 +141,20 @@ SELECT
     unitcode,
     unitname
 FROM
-         uni.enrolment
-    NATURAL JOIN uni.unit
+         uni.unit
+    NATURAL JOIN uni.enrolment
+WHERE
+        semester = 1
+    AND to_char(ofyear, 'yyyy') = '2020'
+    AND grade = 'DEF'
 GROUP BY
     unitcode,
     unitname
-HAVING
-    (
-        SELECT
-            COUNT(studid)
-        FROM
-            uni.enrolment
-        WHERE
-                grade = 'DEF'
-            AND semester = 1
-            AND to_char(ofyear, 'yyyy') = '2020'
-    ) >= 1
+/*HAVING*/
+/*    count(*)>= 1*/
 ORDER BY
-    unitname;
+    unitcode;
+
 
 
 /* 9. Find the unit/s with the highest number of enrolments 
@@ -220,19 +216,6 @@ WHERE
             AND semester = 1
             AND to_char(ofyear, 'yyyy') = '2020'
     )
-ORDER BY mark DESC, fullname;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ORDER BY
+    mark DESC,
+    fullname;

@@ -30,9 +30,9 @@ FROM
 WHERE
     to_char(ofyear, 'yyyy') = '2019'
 GROUP BY
+    unitcode,
     to_char(ofyear, 'yyyy'),
-    semester,
-    unitcode
+    semester
 ORDER BY
     enrolments;
     
@@ -58,3 +58,4 @@ WHERE
     )
 ORDER BY
     studid;
+
