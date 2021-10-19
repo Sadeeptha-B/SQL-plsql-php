@@ -164,6 +164,7 @@ FROM
 
 ROLLBACK;
 
+
 /* Trigger to maintain student's average mark */
 CREATE OR REPLACE TRIGGER maintain_average
 AFTER UPDATE OR INSERT OF enrol_mark on enrolment
@@ -172,11 +173,6 @@ BEGIN
     stu_avg_mark = (SELECT AVG(enrol_mark) FROM enrolment WHERE stu_nbr=student.stu_nbr ) 
 END;
 /
-
-
-
-
-
 
 
 /* 3*/

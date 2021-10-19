@@ -208,30 +208,73 @@ If the average result is 'null', display the average as 0.00.
 All values must be shown with two decimal digits. 
 Order the list in increasing order of average mark. */
 SELECT
-    unitcode,
-    to_char(ofyear, 'yyyy')      AS year,
-    semester,
-    COUNT(studid)                AS no_of_enrolment,
-    AVG(mark)                    AS average_mark
+    o.unitcode,
+    to_char(o.ofyear, 'yyyy')                        AS year,
+    o.semester,
+    COUNT(studid)                                    AS no_of_enrolment,
+    to_char(nvl(AVG(mark), 0), '990.00')             AS average_mark
 FROM
     uni.offering     o
     LEFT OUTER JOIN uni.enrolment    e
     ON o.unitcode = e.unitcode
-    AND o.ofyear = e.ofyear
-    AND o.semester = u.semester
+       AND o.ofyear = e.ofyear
+       AND o.semester = e.semester
 GROUP BY
-    to_char(ofyear, 'yyyy'),
-    semester,
-    unitcode
+    to_char(o.ofyear, 'yyyy'),
+    o.semester,
+    o.unitcode
 ORDER BY
     average_mark;
 
 
-
+/*Marking scheme solution
+note the use of round, nvl, to_char, lpad
+how the using syntax takes away ambiguity errors
+*/
+SELECT
+    unitcode,
+    to_char(ofyear, 'YYYY')                                                            AS year,
+    semester,
+    COUNT(studid)                                                                      AS no_of_enrolment,
+    lpad(to_char(nvl(round(AVG(mark), 2), 0), '990.99'), 12, ' ')                      AS average_mark
+FROM
+    uni.offering
+    LEFT OUTER JOIN uni.enrolment
+    USING ( ofyear,
+            semester,
+            unitcode )
+GROUP BY
+    unitcode,
+    to_char(ofyear, 'YYYY'),
+    semester
+ORDER BY
+    average_mark;
+    
+    
 /* 4. List all units offered in semester 2 2019 which do not have any enrolment. 
 Include the unit code, unit name, and the chief examiner's name in the list. 
 Order the list based on the unit code. */
-
+SELECT
+    unitcode,
+    unitname,
+    chiefexam
+FROM
+         uni.offering
+    JOIN uni.unit
+    USING ( unitcode )
+    LEFT OUTER JOIN uni.enrolment
+    USING ( unitcode )
+WHERE
+        uni.offering.semester = 2
+    AND to_char(uni.offering.ofyear, 'yyyy') = '2019'
+GROUP BY
+    unitcode,
+    unitname,
+    chiefexam
+HAVING
+    COUNT(studid) = 0
+ORDER BY
+    unitcode;
 
 
 /* 5. List the id and full name of students who are enrolled in both ‘Introduction to databases’ 
