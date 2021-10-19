@@ -9,10 +9,9 @@
 Q6: As it is specified in the ed forum (https://edstem.org/au/courses/6068/discussion/639482)
 to display hours even if the hours field is zero, it is done so.
 
-Q7: Since it is not specified in the spec, the value for the procedure price 
-differential is not rounded and as rounding the value reduces the interpretability
-of the data. Further, as it is allowed to have negative values,it is not assigned
-a currency value, even though it is the subtraction of two currency values
+Q7: Since the procedure price differnential is obtained by a subtraction of currencies, it is 
+formatted as a currency. As it is not sensible for a currency to have a lot of decimal places, 
+the value is rounded to two decimal places.
 
 */
 
@@ -168,7 +167,7 @@ SELECT
     proc_description,
     proc_time,
     lpad(to_char(proc_std_cost, '$999.00'),14) AS standard_cost,
-    avg_proc_cost - proc_std_cost AS "Procedure Price Differential"
+    lpad(to_char(round(avg_proc_cost - proc_std_cost, 2), '$90.00'),21) AS "Procedure Price Differential"
 FROM
          cgh.procedure p
     JOIN (

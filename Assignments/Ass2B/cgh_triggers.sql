@@ -1,9 +1,9 @@
---****PLEASE ENTER YOUR DETAILS BELOW****
---cgh_triggers.sql
+/*****PLEASE ENTER YOUR DETAILS BELOW*****/
+/*cgh_triggers.sql*/
 
---Student ID: 30769140
---Student Name: Sadeeptha Bandara
---Tutorial No:
+/*Student ID: 30769140*/
+/*Student Name: Sadeeptha Bandara*/
+/*Tutorial No:*/
 
 /* Comments for your marker:
 
@@ -42,10 +42,10 @@ END;
 
 /*Test Harness for Trigger1*/
 
--- Testing update
--- ===============================================
+/* Testing update*/
+/* ===============================================*/
 
--- Initial State
+/* Initial State*/
 SELECT
     adprc_no,
     adprc_pat_cost
@@ -54,49 +54,102 @@ FROM
 WHERE
     adprc_no = 1000;
 
---Updating cost greater than 20% of standard cost
+/*Updating cost greater than 20% of standard cost*/
 UPDATE adm_prc
 SET
     adprc_pat_cost = 100
 WHERE
     adprc_no = 1000;
 
---After attempt
+/*After attempt*/
 SELECT
     adprc_no,
     adprc_pat_cost
 FROM
     adm_prc;
 
--- Updating cost lesser than 20% of standard cost
-UPDATE adm_prc SET adprc_pat_cost = 50 WHERE adprc_no = 1000;
-SELECT adprc_no, adprc_pat_cost FROM adm_prc;
+/* Updating cost lesser than 20% of standard cost*/
+UPDATE adm_prc
+SET
+    adprc_pat_cost = 50
+WHERE
+    adprc_no = 1000;
 
--- Valid cost update: within 20%
-UPDATE adm_prc SET adprc_pat_cost = 85 WHERE adprc_no = 1000;
+SELECT
+    adprc_no,
+    adprc_pat_cost
+FROM
+    adm_prc;
 
---Final state
-SELECT adprc_no, adprc_pat_cost FROM adm_prc;
+/* Valid cost update: within 20%*/
+UPDATE adm_prc
+SET
+    adprc_pat_cost = 85
+WHERE
+    adprc_no = 1000;
+
+/*Final state*/
+SELECT
+    adprc_no,
+    adprc_pat_cost
+FROM
+    adm_prc;
 
 ROLLBACK;
 
---Testing insert
--- ===============================================
+/*Testing insert*/
+/* ===============================================*/
 
---Initial state
-SELECT * FROM adm_prc;
+/*Initial state*/
+SELECT
+    *
+FROM
+    adm_prc;
 
--- Inserting cost greater than 20% of standard cost
-INSERT INTO adm_prc VALUES(1030, to_date('05-Aug-2021', 'dd-Mon-yyyy'), 250,  0, 100010, 15511);
-SELECT * FROM adm_prc;
+/* Inserting cost greater than 20% of standard cost*/
+INSERT INTO adm_prc VALUES (
+    1030,
+    TO_DATE('05-Aug-2021', 'dd-Mon-yyyy'),
+    250,
+    0,
+    100010,
+    15511
+);
 
--- Inserting cost lesser than 20% of standard cost
-INSERT INTO adm_prc VALUES(1030, to_date('05-Aug-2021', 'dd-Mon-yyyy'), 150,  0, 100010, 15511);
-SELECT * FROM adm_prc;
+SELECT
+    *
+FROM
+    adm_prc;
 
--- Inserting valid cost: within 20%
-INSERT INTO adm_prc VALUES(1030, to_date('05-Aug-2021', 'dd-Mon-yyyy'), 210,  0, 100010, 15511);
-SELECT * FROM adm_prc;
+/* Inserting cost lesser than 20% of standard cost*/
+INSERT INTO adm_prc VALUES (
+    1030,
+    TO_DATE('05-Aug-2021', 'dd-Mon-yyyy'),
+    150,
+    0,
+    100010,
+    15511
+);
+
+SELECT
+    *
+FROM
+    adm_prc;
+
+/* Inserting valid cost: within 20%*/
+INSERT INTO adm_prc VALUES (
+    1030,
+    TO_DATE('05-Aug-2021', 'dd-Mon-yyyy'),
+    210,
+    0,
+    100010,
+    15511
+);
+
+SELECT
+    *
+FROM
+    adm_prc;
 
 ROLLBACK;
 
@@ -134,7 +187,7 @@ BEGIN
 
     /* Computing total cost for procedures including item costs*/
     SELECT
-        SUM(adprc_pat_cost + adprc_items_cost)
+        nvl(SUM(adprc_pat_cost + adprc_items_cost), 0)
     INTO adm_procedure_cost
     FROM
         adm_prc
@@ -150,93 +203,249 @@ END;
 
 /*Test Harness for Trigger2*/
 
--- Admission with an already filled discharge date
--- ====================================================
--- Initial State
-SELECT adm_no, adm_date_time, adm_discharge FROM admission WHERE adm_no = 100010;
+/* Admission with an already filled discharge date*/
+/* ====================================================*/
+/* Initial State*/
+SELECT
+    adm_no,
+    adm_date_time,
+    adm_discharge
+FROM
+    admission
+WHERE
+    adm_no = 100010;
+    
 
--- Attempting to update
-UPDATE admission SET adm_discharge = to_date('21-Oct-2021', 'dd-Mon-yyyy') WHERE adm_no = 100010; 
+/* Attempting to update*/
+UPDATE admission
+SET
+    adm_discharge = TO_DATE('21-Oct-2021', 'dd-Mon-yyyy')
+WHERE
+    adm_no = 100010; 
 
--- After attempt
-SELECT adm_no, adm_date_time, adm_discharge FROM admission WHERE adm_no = 100010;
-
-
--- Attempt to add a discharge date earlier than admission date
--- ======================================================
--- Initial State (Admission with no discharge date)
-SELECT adm_no, adm_date_time, adm_discharge FROM admission WHERE adm_no = 100280;
-
--- Attempting to update
-UPDATE admission SET adm_discharge = to_date('01-Apr-2021', 'dd-Mon-yyyy') WHERE adm_no = 100280; 
-
--- After attempt
-SELECT adm_no, adm_date_time, adm_discharge FROM admission WHERE adm_no = 100280;
-
-
--- Attempt to add a discharge date earlier than the last procedure
--- ======================================================================
--- Creating test procedures for admission no 100280
-INSERT INTO adm_prc VALUES(1030, to_date('15-Oct-2021', 'dd-Mon-yyyy'), 210,  0, 100280, 15511);
-INSERT INTO adm_prc VALUES(1040, to_date('16-Oct-2021', 'dd-Mon-yyyy'), 210,  0, 100280, 15511);
-
--- Initial State: the last procedure date and the admission value (Admission with no discharge date)
-SELECT adm_no, MAX(adprc_date_time) FROM adm_prc WHERE adm_no = 100280 GROUP BY adm_no;
-
--- Attempting to update
-UPDATE admission SET adm_discharge = to_date('14-Oct-2021', 'dd-Mon-yyyy') WHERE adm_no = 100280; 
-
--- After attempt
-SELECT adm_no, adm_date_time, adm_discharge FROM admission WHERE adm_no = 100280;
+/* After attempt*/
+SELECT
+    adm_no,
+    adm_date_time,
+    adm_discharge
+FROM
+    admission
+WHERE
+    adm_no = 100010;
 
 
--- Add valid discharge date
--- ===================================
--- Initial State
-SELECT adm_no, adm_date_time, adm_discharge FROM admission WHERE adm_no = 100280;
+/* Attempt to add a discharge date earlier than admission date*/
+/* ======================================================*/
+/* Initial State (Admission with no discharge date)*/
+SELECT
+    adm_no,
+    adm_date_time,
+    adm_discharge
+FROM
+    admission
+WHERE
+    adm_no = 100280;
 
--- Attempting to update
-UPDATE admission SET adm_discharge = to_date('21-Oct-2021', 'dd-Mon-yyyy') WHERE adm_no = 100280; 
+/* Attempting to update*/
+UPDATE admission
+SET
+    adm_discharge = TO_DATE('01-Apr-2021', 'dd-Mon-yyyy')
+WHERE
+    adm_no = 100280; 
 
--- After attempt
-SELECT adm_no, adm_date_time, adm_discharge FROM admission WHERE adm_no = 100280;
+/* After attempt*/
+SELECT
+    adm_no,
+    adm_date_time,
+    adm_discharge
+FROM
+    admission
+WHERE
+    adm_no = 100280;
+
+
+/* Attempt to add a discharge date earlier than the last procedure*/
+/* ======================================================================*/
+/* Creating test procedures for admission no 100280*/
+INSERT INTO adm_prc VALUES (
+    1030,
+    TO_DATE('15-Oct-2021', 'dd-Mon-yyyy'),
+    210,
+    0,
+    100280,
+    15511
+);
+
+INSERT INTO adm_prc VALUES (
+    1040,
+    TO_DATE('16-Oct-2021', 'dd-Mon-yyyy'),
+    210,
+    0,
+    100280,
+    15511
+);
+
+/* Initial State: the last procedure date and the admission value (Admission with no discharge date)*/
+SELECT
+    adm_no,
+    MAX(adprc_date_time)
+FROM
+    adm_prc
+WHERE
+    adm_no = 100280
+GROUP BY
+    adm_no;
+
+/* Attempting to update*/
+UPDATE admission
+SET
+    adm_discharge = TO_DATE('14-Oct-2021', 'dd-Mon-yyyy')
+WHERE
+    adm_no = 100280; 
+
+/* After attempt*/
+SELECT
+    adm_no,
+    adm_date_time,
+    adm_discharge
+FROM
+    admission
+WHERE
+    adm_no = 100280;
+
+
+/* Add valid discharge date*/
+/* ===================================*/
+/* Initial State*/
+SELECT
+    adm_no,
+    adm_date_time,
+    adm_discharge
+FROM
+    admission
+WHERE
+    adm_no = 100280;
+
+/* Attempting to update*/
+UPDATE admission
+SET
+    adm_discharge = TO_DATE('21-Oct-2021', 'dd-Mon-yyyy')
+WHERE
+    adm_no = 100280; 
+
+/* After attempt*/
+SELECT
+    adm_no,
+    adm_date_time,
+    adm_discharge
+FROM
+    admission
+WHERE
+    adm_no = 100280;
 
 ROLLBACK;
 
--- Calculating admission total cost
--- =======================================================================
+/* Calculating admission total cost*/
+/* =======================================================================*/
 
--- For a patient who has done procedures
--- ++++++++++++++++++++++++++++++++++++++
+/* For a patient who has done procedures*/
+/* ++++++++++++++++++++++++++++++++++++++*/
 
--- Creating test procedures for admission no 100280
--- Total cost for procedures = 210 + 210 + 20 + 10 = 450
-INSERT INTO adm_prc VALUES(1030, to_date('15-Oct-2021', 'dd-Mon-yyyy'), 210,  20, 100280, 15511);
-INSERT INTO adm_prc VALUES(1040, to_date('16-Oct-2021', 'dd-Mon-yyyy'), 210,  10, 100280, 15511);
+/* Creating test procedures for admission no 100280*/
+/* Total cost for procedures = 210 + 210 + 20 + 10 = 450*/
+INSERT INTO adm_prc VALUES (
+    1030,
+    TO_DATE('15-Oct-2021', 'dd-Mon-yyyy'),
+    210,
+    20,
+    100280,
+    15511
+);
 
--- Initial state
-SELECT adm_no, COUNT(adprc_date_time) FROM adm_prc WHERE adm_no = 100280 GROUP BY adm_no;
-SELECT adm_no, adm_total_cost FROM admission WHERE adm_no = 100280;
+INSERT INTO adm_prc VALUES (
+    1040,
+    TO_DATE('16-Oct-2021', 'dd-Mon-yyyy'),
+    210,
+    10,
+    100280,
+    15511
+);
 
--- Updating admission with valid discharge date
-UPDATE admission SET adm_discharge = to_date('21-Oct-2021', 'dd-Mon-yyyy') WHERE adm_no = 100280; 
+/* Initial state*/
+SELECT
+    adm_no,
+    COUNT(adprc_date_time)
+FROM
+    adm_prc
+WHERE
+    adm_no = 100280
+GROUP BY
+    adm_no;
 
--- After update
--- Total final cost = total procedure cost + admin cost = 450 + 50 = 500
-SELECT adm_no, adm_total_cost FROM admission WHERE adm_no = 100280;
+SELECT
+    adm_no,
+    adm_total_cost
+FROM
+    admission
+WHERE
+    adm_no = 100280;
+
+/* Updating admission with valid discharge date*/
+UPDATE admission
+SET
+    adm_discharge = TO_DATE('21-Oct-2021', 'dd-Mon-yyyy')
+WHERE
+    adm_no = 100280; 
+
+/* After update*/
+/* Total final cost = total procedure cost + admin cost = 450 + 50 = 500*/
+SELECT
+    adm_no,
+    adm_total_cost
+FROM
+    admission
+WHERE
+    adm_no = 100280;
 
 ROLLBACK;
 
--- For a patient that did not undergo any procedure
-SELECT adm_no, COUNT(adprc_date_time) FROM adm_prc WHERE adm_no = 100280 GROUP BY adm_no;
+/* For a patient that did not undergo any procedure*/
+/* ++++++++++++++++++++++++++++++++++++++*/
 
--- Initial total cost (null)
-SELECT adm_no, adm_total_cost FROM admission WHERE adm_no = 100280;
+/* Initial state*/
+SELECT
+    adm_no,
+    COUNT(adprc_date_time)
+FROM
+    adm_prc
+WHERE
+    adm_no = 100280
+GROUP BY
+    adm_no;
 
--- Updating admission with valid discharge date
-UPDATE admission SET adm_discharge = to_date('21-Oct-2021', 'dd-Mon-yyyy') WHERE adm_no = 100280; 
+SELECT
+    adm_no,
+    adm_total_cost
+FROM
+    admission
+WHERE
+    adm_no = 100280;
 
--- After update
-SELECT adm_no, adm_total_cost FROM admission WHERE adm_no = 100280;
+/* Updating admission with valid discharge date*/
+UPDATE admission
+SET
+    adm_discharge = TO_DATE('21-Oct-2021', 'dd-Mon-yyyy')
+WHERE
+    adm_no = 100280; 
+
+/* After update*/
+/* Final total cost = 50*/
+SELECT
+    adm_no,
+    adm_total_cost
+FROM
+    admission
+WHERE
+    adm_no = 100280;
 
 ROLLBACK;
