@@ -14,7 +14,6 @@ differential is not rounded and as rounding the value reduces the interpretabili
 of the data. Further, as it is allowed to have negative values,it is not assigned
 a currency value, even though it is the subtraction of two currency values
 
-
 */
 
 
