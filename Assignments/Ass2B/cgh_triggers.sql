@@ -7,6 +7,9 @@
 
 /* Comments for your marker:
 
+Trigger 2:
+It is assumed that the discharge date time will not be added when initially entering the
+admission. As per the spec, it is not allowed to change a discharge date once entered
 
 
 
@@ -95,26 +98,52 @@ SELECT * FROM adm_prc;
 INSERT INTO adm_prc VALUES(1030, to_date('05-Aug-2021', 'dd-Mon-yyyy'), 210,  0, 100010, 15511);
 SELECT * FROM adm_prc;
 
-
 ROLLBACK;
-
-
-
-
 
 
 /*
     Trigger2
 */
-/*Please copy your trigger code with a slash(/) followed by an empty line after this line*/
+CREATE OR REPLACE TRIGGER discharge_trigger BEFORE
+    UPDATE OF adm_discharge ON admission
+    FOR EACH ROW
+DECLARE
+    adm_procedure_cost NUMBER;
+    last_proc_date DATE;
+BEGIN
+    IF :old.adm_discharge IS NOT NULL THEN
+        raise_application_error(-20000, 'Discharge date and time cannot be changed');
+    END IF;
+    
+    SELECT max(adprc_date_time) INTO last_proc_date FROM adm_prc WHERE adm_no = :new.adm_no;
 
+    IF :new.adm_discharge - :new.adm_date_time < 0 THEN
+        raise_application_error(-20000, 'Discharge date cannot be before admission date');
+    ELSIF
+     :new.adm_discharge - last_proc_date < 0 THEN
+        raise_application_error(-20000, 'Discharge date cannot be before the date of the last procedure');
+    END IF;
+    
+    SELECT
+        SUM(adprc_pat_cost + adprc_items_cost) 
+    INTO adm_procedure_cost
+    FROM
+        adm_prc
+    WHERE
+        adm_no = :new.adm_no AND adprc_date_time > :new.adm_date_time;
+        
+    :new.adm_total_cost := adm_procedure_cost + 50;
 
-
-
-
-
-
-
+    DBMS_OUTPUT.PUT_LINE('Discharge successful. Admission total cost calculated and updated');
+END;
+/
 
 /*Test Harness for Trigger2*/
-/*Please copy SQL statements for Test Harness after this line*/
+
+
+
+
+
+
+
+
