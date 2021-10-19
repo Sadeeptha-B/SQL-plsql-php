@@ -6,8 +6,13 @@
 /*Tutorial No: */
 
 /* Comments for your marker:
+Q6: As it is specified in the ed forum (https://edstem.org/au/courses/6068/discussion/639482)
+to display hours even if the hours field is zero, it is done so.
 
-
+Q7: Since it is not specified in the spec, the value for the procedure price 
+differential is not rounded and as rounding the value reduces the interpretability
+of the data. Further, as it is allowed to have negative values,it is not assigned
+a currency value, even though it is the subtraction of two currency values
 
 
 */
@@ -16,9 +21,6 @@
 /*
     Q1
 */
-/* PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE*/
-/* ENSURE that your query is formatted and has a semicolon*/
-/* (;) at the end of this answer*/
 SELECT
     doctor_title,
     doctor_fname,
@@ -43,9 +45,6 @@ ORDER BY
 /*
     Q2
 */
-/* PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE*/
-/* ENSURE that your query is formatted and has a semicolon (;)*/
-/* at the end of this answer*/
 SELECT
     item_code,
     item_description,
@@ -63,29 +62,24 @@ ORDER BY
 /*
     Q3
 */
-/* PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE*/
-/* ENSURE that your query is formatted and has a semicolon (;)*/
-/* at the end of this answer*/
 SELECT
     patient_id,
-    patient_fname
-    || ' '
-    || patient_lname                                    AS "Patient Name",
-    to_char(adm_date_time, 'hh:mi PM dd-Mon-yyyy')      AS "Admission Date and Time",
-    doctor_title
-    || '.'
-    || doctor_fname
-    || ' '
-    || doctor_lname                                     AS "Doctor Name"
+    ltrim(patient_fname
+          || ' '
+          || patient_lname)                             AS "Patient Name",
+    to_char(adm_date_time, 'dd-Mon-yyyy hh:mi PM ')     AS "Admission Date and Time",
+    ltrim(doctor_title
+          || ' '
+          || ltrim(doctor_fname
+                   || ' '
+                   || doctor_lname))                    AS "Doctor Name"
 FROM
          cgh.admission
-    JOIN cgh.patient
-    USING ( patient_id )
-    JOIN cgh.doctor
-    USING ( doctor_id )
+    NATURAL JOIN cgh.patient
+    NATURAL JOIN cgh.doctor
 WHERE
         adm_date_time >= TO_DATE('11-Sep-2021 10 AM', 'dd-Mon-yyyy hh PM')
-    AND adm_date_time <= TO_DATE('14-Sep-2021 04 PM', 'dd-Mon-yyyy hh PM')
+    AND adm_date_time <= TO_DATE('14-Sep-2021 06 PM', 'dd-Mon-yyyy hh PM')
 ORDER BY
     adm_date_time;
     
@@ -93,14 +87,11 @@ ORDER BY
 /*
     Q4
 */
-/* PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE*/
-/* ENSURE that your query is formatted and has a semicolon (;)*/
-/* at the end of this answer*/
 SELECT
     proc_code,
     proc_name,
     proc_description,
-    to_char(proc_std_cost, '$990.00') AS standard_cost
+    lpad(to_char(proc_std_cost, '$990.00'),16,' ') AS standard_cost
 FROM
     cgh.procedure
 WHERE
@@ -117,9 +108,6 @@ ORDER BY
 /*
     Q5
 */
-/* PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE*/
-/* ENSURE that your query is formatted and has a semicolon (;)*/
-/* at the end of this answer*/
 SELECT
     patient_id,
     patient_lname,
@@ -141,31 +129,23 @@ FROM
     )
     USING ( patient_id )
 ORDER BY
-    number_of_admissions,
+    number_of_admissions DESC,
     patient_dob;
 
 
 /*
     Q6
 */
-/* PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE*/
-/* ENSURE that your query is formatted and has a semicolon (;)*/
-/* at the end of this answer*/
 SELECT
     adm_no,
     patient_id,
     patient_fname,
     patient_lname,
-    CASE ( ( adm_discharge - adm_date_time ) - floor(adm_discharge - adm_date_time) )
-        WHEN 0 THEN
-            floor(adm_discharge - adm_date_time)
-            || ' days'
-        ELSE
-            floor(adm_discharge - adm_date_time)
-            || ' days'
-            || to_char(((adm_discharge - adm_date_time) - floor(adm_discharge - adm_date_time)) * 24, '99.0')
+    ltrim(to_char(floor(adm_discharge - adm_date_time), 99))
+            || ' days '
+            || ltrim(to_char(((adm_discharge - adm_date_time) - floor(adm_discharge - adm_date_time)) * 24, '90.0'))
             || ' hrs'
-    END AS length_of_stay
+    AS length_of_stay
 FROM
          cgh.admission
     NATURAL JOIN cgh.patient
@@ -183,15 +163,12 @@ ORDER BY
 /*
     Q7
 */
-/* PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE*/
-/* ENSURE that your query is formatted and has a semicolon (;)*/
-/* at the end of this answer*/
 SELECT
     p.proc_code,
     proc_name,
     proc_description,
     proc_time,
-    proc_std_cost,
+    lpad(to_char(proc_std_cost, '$999.00'),14) AS standard_cost,
     avg_proc_cost - proc_std_cost AS "Procedure Price Differential"
 FROM
          cgh.procedure p
@@ -212,9 +189,6 @@ ORDER BY
 /*
     Q8
 */
-/* PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE*/
-/* ENSURE that your query is formatted and has a semicolon (;)*/
-/* at the end of this answer*/
 SELECT
     proc_code,
     proc_name,
@@ -238,16 +212,13 @@ ORDER BY
 /*
     Q9a (FIT2094 only) or Q9b (FIT3171 only)
 */
-/* PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE*/
-/* ENSURE that your query is formatted and has a semicolon (;)*/
-/* at the end of this answer*/
 SELECT
     adprc_no,
     proc_code,
     adm_no,
     patient_id,
     to_char(adprc_date_time, 'dd-Mon-yyyy HH24:mi')      AS procedure_time,
-    adprc_pat_cost + adprc_items_cost                    AS total_cost
+    lpad(to_char(adprc_pat_cost + adprc_items_cost, '$990.00'),12)   AS total_cost
 FROM
        cgh.adm_prc ap1
         JOIN cgh.admission
